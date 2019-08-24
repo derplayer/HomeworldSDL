@@ -668,6 +668,132 @@
 		<Unit filename="Game/wrap.h" />
 		<Unit filename="Game/wrap_types.h" />
 		<Unit filename="Game/wrapped_unlisted_functions.h" />
+		<Unit filename="Missions/Generated/Mission01.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission01.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission01.h" />
+		<Unit filename="Missions/Generated/Mission02.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission02.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission02.h" />
+		<Unit filename="Missions/Generated/Mission03.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission03.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission03.h" />
+		<Unit filename="Missions/Generated/Mission04.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission04.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission04.h" />
+		<Unit filename="Missions/Generated/Mission05.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission05.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission05.h" />
+		<Unit filename="Missions/Generated/Mission05_OEM.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission05_OEM.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission05_OEM.h" />
+		<Unit filename="Missions/Generated/Mission06.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission06.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission06.h" />
+		<Unit filename="Missions/Generated/Mission07.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission07.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission07.h" />
+		<Unit filename="Missions/Generated/Mission08.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission08.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission08.h" />
+		<Unit filename="Missions/Generated/Mission09.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission09.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission09.h" />
+		<Unit filename="Missions/Generated/Mission10.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission10.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission10.h" />
+		<Unit filename="Missions/Generated/Mission11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission11.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission11.h" />
+		<Unit filename="Missions/Generated/Mission12.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission12.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission12.h" />
+		<Unit filename="Missions/Generated/Mission13.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission13.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission13.h" />
+		<Unit filename="Missions/Generated/Mission14.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission14.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission14.h" />
+		<Unit filename="Missions/Generated/Mission15.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission15.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission15.h" />
+		<Unit filename="Missions/Generated/Mission16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission16.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Mission16.h" />
+		<Unit filename="Missions/Generated/Tutorial1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Tutorial1.func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Missions/Generated/Tutorial1.h" />
 		<Unit filename="SDL/ClientCDKey.cpp" />
 		<Unit filename="SDL/ClientCDKey.h" />
 		<Unit filename="SDL/NetworkInterface.c">

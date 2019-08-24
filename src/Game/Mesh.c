@@ -1583,7 +1583,7 @@ void meshObjectRender(polygonobject *object, materialentry *materials, sdword iC
         enableBlend = TRUE;
         if (enableBlend)
         {
-            glEnable(GL_LINE_SMOOTH);
+            //glEnable(GL_LINE_SMOOTH);
             glEnable(GL_BLEND);
             rndAdditiveBlends(FALSE);
         }
@@ -1797,7 +1797,7 @@ void meshObjectRender(polygonobject *object, materialentry *materials, sdword iC
         rndLightingEnable(lightOn);
         if (enableBlend)
         {
-            glDisable(GL_LINE_SMOOTH);
+            //glDisable(GL_LINE_SMOOTH);
         }
     }
 }
@@ -2129,7 +2129,7 @@ void meshMorphedObjectRender(
                 primLine3((vector *)&vertexList2[polygon->iV2], (vector *)&vertexList2[polygon->iV0], morphLineColor1);
             }
             //draw the connecting lines
-            glEnable(GL_LINE_STIPPLE);
+            //glEnable(GL_LINE_STIPPLE);
             glLineStipple(1, 0x5a5a);
             if (!keyIsHit(THREEKEY))
             {
@@ -2137,7 +2137,7 @@ void meshMorphedObjectRender(
                 primLine3((vector *)&vertexList1[polygon->iV1], (vector *)&vertexList2[polygon->iV1], colWhite);
                 primLine3((vector *)&vertexList1[polygon->iV2], (vector *)&vertexList2[polygon->iV2], colWhite);
             }
-            glDisable(GL_LINE_STIPPLE);
+            //glDisable(GL_LINE_STIPPLE);
             if (!keyIsHit(FOURKEY))
             {
                 primLine3(&vert0, &vert1, colRGB(128, 128, 128));

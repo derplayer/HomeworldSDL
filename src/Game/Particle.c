@@ -1260,7 +1260,7 @@ udword partRenderMeshSystem(udword n, particle *p, udword flags, trhandle tex, m
 // MeshMorphedObjectRender crash fixme part 1
 #if !defined(__FreeBSD__) && defined(_LINUX_FIX_ME)
         if ((mesh != NULL) && (mesh != (meshdata*) 0x7fffffff))
-#else   
+#else
         if ((mesh != NULL) && (mesh != (meshdata*) 0xffffffff))
 #endif
         {
@@ -1583,12 +1583,12 @@ udword partRenderPointSystem(udword n, particle *p, udword flags)
     bool alpha = FALSE;
 
     bool texEnabled, lightEnabled;
-    GLfloat pointsize;
+    GLfloat pointsize = 1.0f; //TODO: opengl hack, but should be ok
 
     texEnabled = rndTextureEnable(FALSE);
     lightEnabled = rndLightingEnable(FALSE);
 
-    glGetFloatv(GL_POINT_SIZE, &pointsize);
+    //glGetFloatv(GL_POINT_SIZE, &pointsize);
     if (bitTest(flags, PART_ALPHA))
     {
         alpha = TRUE;
@@ -1856,7 +1856,7 @@ meshdata* partMeshNextMesh(meshSystem* psys, particle* p)
     sdword    frameNo   = partAdvanceMeshMorph(psys, p);
     meshAnim* animblock = (meshAnim*)p->mstruct;
     meshAnim* frame     = animblock + frameNo;
-    
+
     return frame->mesh;
 }
 
@@ -1914,7 +1914,7 @@ sdword partAdvanceMeshMorph(meshSystem* psys, particle* p)
 // MeshMorphedObjectRender crash fixme part 2
 #if !defined(__FreeBSD__) && defined(_LINUX_FIX_ME)
     if (next->mesh == NULL || next->mesh == (meshdata*) 0x7fffffff)
-#else    
+#else
     if (next->mesh == NULL || next->mesh == (meshdata*) 0xffffffff)
 #endif
     {
@@ -2010,14 +2010,14 @@ int is_final_tex(trhandle tex)
     if (tex == 0xffffffff) {
       return 1;
     }
-    if (0x7fffffff == (tex & 0x7fffffff)) { 
+    if (0x7fffffff == (tex & 0x7fffffff)) {
       /* it will catch stuff like 0x9cce2641ffffffff on 64-bit... but source of 32/64 should really be found and fixed */
       dbgWarningf("Particle.c",2149, "is_final_tex got invalid tex pointer 0x%lx - trying to work around", tex);
       return 1;
     }
     if (tex >= TR_RegistrySize) { dbgFatalf(DBG_Loc, "tex handle 0x%lx is broken in is_final_tex, unable to continue", tex); }
 #endif
-        
+
     return 0;
 }
 

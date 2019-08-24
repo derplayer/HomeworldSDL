@@ -1811,12 +1811,12 @@ void mgSkirmish(char *name, featom *atom)
     LANGame = FALSE;
     IPGame = 1; // DO NOT USE TRUE for CPP reasons
     tpGameCreated.numPlayers    = 1;
-    
+
     // use the previous number of computer players unless it takes us over the limit
     if (tpGameCreated.numComputers + tpGameCreated.numPlayers > MAX_MULTIPLAYER_PLAYERS) {
         tpGameCreated.numComputers = 1;
     }
-    
+
     mgShowScreen(MGS_Skirmish_Basic, TRUE);
 
 #ifdef _MACOSX_FIX_LAN
@@ -2496,7 +2496,7 @@ void mgDrawChatWindowItem(rectangle *rect, listitemhandle data)
     sdword x = rect->x0 + MG_HorzSpacing,
            y = rect->y0 + MG_VertSpacing / 2;
     color  c = mgNormalChatColor;
-    
+
     fonthandle  oldfont  = fontMakeCurrent(mgChatWindowFont);
     chatlist   *chatinfo = (chatlist *)data->data;
 
@@ -3198,7 +3198,7 @@ void mgJoinGame(char*name,featom*atom)
                 return;
             }
         }
-        
+
 #ifndef _MACOSX_FIX_LAN
         if (wcslen(gameinfo->game.directoryCustomInfo.stringdata)>1)
         {
@@ -3714,7 +3714,7 @@ void mgGameChatItemDraw(rectangle *rect, listitemhandle data)
     sdword x = rect->x0 + MG_HorzSpacing,
            y = rect->y0 + MG_VertSpacing / 2;
     color  c = mgNormalChatColor;
-    
+
     fonthandle  oldfont  = fontMakeCurrent(mgGameChatFont);
     chatlist   *chatinfo = (chatlist *)data->data;
 
@@ -6668,12 +6668,12 @@ void chatReceiveUserLeft(unsigned long userID)
     UnLockQueue(&mgThreadTransfer);
 }
 
-void chatReceiveMessage(unsigned long originUserID, sdword whisper,unsigned long type, unsigned long size, const void* chatData)
+void chatReceiveMessage(unsigned long originUserID, sdword whisper,unsigned long type, unsigned long sizeval, const void* chatData)
 {
     mgqueuechatlist chat;
     char aNarrowString[MAX_CHATSTRING_LENGTH];
     unsigned long i;
-    unsigned long aNumChars = size >> 1;
+    unsigned long aNumChars = sizeval >> 1;
 
     if (originUserID != mgMyChatUserID)
     {

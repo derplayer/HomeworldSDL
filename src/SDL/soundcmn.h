@@ -1,7 +1,7 @@
 #ifndef ___SOUNDCMN_H
 #define ___SOUNDCMN_H
 
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 #include "File.h"
 #include "fqcodec.h"
@@ -37,10 +37,10 @@ typedef struct
 	smemsize		datasize;
 	smemsize		loopstart;
 	smemsize		loopend;
-	
+
 	sword			bitrate;
 	sword			flags;
-	
+
 	ubyte			volume;
 	sbyte			pan;
 	sbyte			pad[2];
@@ -66,13 +66,13 @@ typedef struct
 	bool			mute;
 
 	PATCH			*ppatch;
-	
+
 	real32			volume;
 	real32			volfade;
-	
+
 	sword			voltarget;
 	sword			volticksleft;
-	
+
 	sword			pan;
 	sword			pantarget;
 	sword			panfade;
@@ -82,7 +82,7 @@ typedef struct
 	real32			pitchtarget;
 	real32			pitchfade;
 	sdword			pitchticksleft;
-	
+
 	sword			heading;
 	sword			bitrate;
 
@@ -94,11 +94,11 @@ typedef struct
 	sbyte			*freqdata;
 	sbyte			*currentpos;
 	sbyte			*endpos;
-	
+
 	sdword			amountread;
 
 	real32			shift;
-	
+
 	real32			volfactorL;
 	real32			volfactorR;
 
@@ -122,13 +122,13 @@ typedef struct
 	smemsize		offset;		/* this is the offset within that file */
 	sdword			flags;		/* looping? */
 	sdword			size;
-	
+
 	sword			vol;
 	sword			pan;
-	
+
 	sword			numchannels;
 	sword			bitrate;
-	
+
 	real32			fadetime;
 	real32			volfactorL;
 	real32			volfactorR;
@@ -189,7 +189,7 @@ typedef struct
 	sdword			playing;
 
 	sdword			handle;		/* this is the sound handle that this stream is being played on */
-	
+
 	sdword			queueindex;	/* this is which queue to play next */
 	sdword			writeindex;	/* this is which queue to play next */
 	sdword			numqueued;

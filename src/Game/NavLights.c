@@ -126,7 +126,7 @@ void RenderNAVLights(Ship *ship)
 			{
 				navLight->lastTimeFlashed = universe.totaltimeelapsed + navLightStatic->startdelay;
 			}
-			
+
 			if(universe.totaltimeelapsed > navLight->lastTimeFlashed)
 			{
 				if(navLight->lightstate == 1)
@@ -137,7 +137,7 @@ void RenderNAVLights(Ship *ship)
 				{
 					navLight->lastTimeFlashed = universe.totaltimeelapsed + navLightStatic->flashrateon;
 				}
-				
+
 				navLight->lightstate = 1 - navLight->lightstate;
 			}
 
@@ -168,9 +168,9 @@ void RenderNAVLights(Ship *ship)
 
                     rndTextureEnable(FALSE);
                     rndAdditiveBlends(TRUE);
-                    glEnable(GL_POINT_SMOOTH);
+                    //glEnable(GL_POINT_SMOOTH);
                     primPointSize3Fade(&navLightStatic->position, 2.0f, tempColor, fade);
-                    glDisable(GL_POINT_SMOOTH);
+                    //glDisable(GL_POINT_SMOOTH);
 				}
 			}
       }

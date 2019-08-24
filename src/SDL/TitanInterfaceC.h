@@ -367,7 +367,7 @@ void SendPrivateChatMessage(unsigned long* userIDList, unsigned short numUsersIn
 void chatReceiveUserJoinReply(short status, unsigned long userID);
 void chatReceiveUsersHere(const char *name, unsigned long userID);
 void chatReceiveUsersJoined(const char *name, unsigned long userID);
-void chatReceiveMessage(unsigned long originUserID, int whisper,unsigned long type, unsigned long size, const void* chatData);
+//void chatReceiveMessage(unsigned long originUserID, int whisper,unsigned long type, unsigned long sizeval, const void* chatData);
 void chatReceiveUserLeft(unsigned long userID);
 
 int authReceiveReply(short status);
