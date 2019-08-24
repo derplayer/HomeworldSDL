@@ -10,7 +10,7 @@
 /*#define WIN32_LEAN_AND_MEAN*/
 #define STRICT
 
-#include "SDL.h"
+#include "SDL/SDL.h"
 #include <stdio.h>
 
 #include <stdio.h>
@@ -193,7 +193,7 @@ static bool rinModeAccepted(rdevice* dev, int width, int height, int depth)
             }
         }
     }
-	
+
     //check for specifically disabled display modes
     for (index = 0; index < RIN_MODESINDEVSTATLIST; index++)
     {
@@ -498,7 +498,7 @@ bool rinEnumeratePrimary(rdevice* dev)
 			}
 		}
     }
-	
+
 	return (dev->modes != 0);
 }
 
@@ -515,7 +515,7 @@ int rinEnumerateDevices(void)
     rdevice* gldev;
     rdevice  primaryDev;
     bool primaryVal;
-    
+
 #ifndef _MACOSX_FIX_GL
     int maxWidth;
 #endif

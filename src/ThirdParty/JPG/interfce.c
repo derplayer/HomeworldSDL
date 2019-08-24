@@ -14,8 +14,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "interfce.h"
-#include "jpeglib.h"
-#include "jerror.h"
+#include "jpeg/jpeglib.h"
+#include "jpeg/jerror.h"
 #include <setjmp.h>
 
 //-----------------------------------------------------------------------------

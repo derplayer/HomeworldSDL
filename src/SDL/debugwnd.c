@@ -4,7 +4,6 @@
 
 #ifdef _WIN32
 #include <windows.h>
-#endif
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -15,6 +14,7 @@
 #include "Task.h"
 #include "File.h"
 #include "debugwnd.h"
+
 
 /*=============================================================================
     Data:
@@ -790,4 +790,4 @@ sdword dbwPrint(sdword pane, char *string)
     }
     return(OKAY);
 }
-
+#endif // _WIN32

@@ -200,7 +200,7 @@ void utyGetFirstCDPath(char *szPath);
 
 //toggle key things
 void utyToggleKeyStatesSave(void);
-void utyToggleKeyStatesRestore(void);
+//void utyToggleKeyStatesRestore(void);
 bool utyCapsLockToggleState(void);
 
 // Start the player dropped dialog box.

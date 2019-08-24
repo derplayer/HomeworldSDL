@@ -48,7 +48,7 @@ int InitWaveFormat()
 	wfWaveFormat.wBitsPerSample=WAVE_BITSAMPLE;
 	wfWaveFormat.nBlockAlign=wfWaveFormat.nChannels*wfWaveFormat.wBitsPerSample/8;
 	wfWaveFormat.nAvgBytesPerSec=wfWaveFormat.nSamplesPerSec*wfWaveFormat.nBlockAlign;
-	
+
 	return 0;
 }
 
@@ -69,7 +69,7 @@ int InitWave(DWORD *dwNumDevs)
 
 	// initialize wave format structure...
 	if(InitWaveFormat() < 0) return -2;
-	
+
 	// create thread to handle wave window messages
 	hWaveThread=CreateThread(NULL,0,(LPTHREAD_START_ROUTINE)ExecWaveThread,NULL,0,&dwThreadID);
 	if(hWaveThread == NULL) return -3;
@@ -82,23 +82,23 @@ int InitWave(DWORD *dwNumDevs)
 */
 int EndWave()
 {
-	// stop 
+	// stop
 	StopWavePlay();
 
 	// check wave thread status
 	if(CheckWaveThread() == ERR) return -1;
-	
+
 	// destroy wave window and terminate thread
 	SendMessage(hWaveWnd,WM_CLOSE,0,0);
 
 	// release thread handle
 	CloseHandle(hWaveThread);
-	
+
 	bDevAvail=FALSE;
 
 	return 0;
 }
- 
+
 /*
  Zero out the wave headers and initialize the data pointers and buffer lengths.
 */
@@ -107,10 +107,10 @@ int InitWaveHeaders()
 	// make the wave buffer size a multiple of the block align...
 	dwBufSize=(WAVE_BUFSIZE-(WAVE_BUFSIZE%wfWaveFormat.nBlockAlign));
 
-	// zero out the wave headers...	
+	// zero out the wave headers...
 	memset(&whWaveHead[0],0,sizeof(WAVEHDR));
 	memset(&whWaveHead[1],0,sizeof(WAVEHDR));
-	
+
 	// now init the data pointers and buffer lengths...
 	whWaveHead[0].dwBufferLength=dwBufSize;
 	whWaveHead[1].dwBufferLength=dwBufSize;
@@ -135,14 +135,14 @@ int StartWavePlay(DWORD dwDeviceID)
 
 	// if the device is still open, just return...
 	if(bDevOpen == TRUE) return 0;
-	
+
 	nBufIndex=0;
-	
+
 	// open the device for recording...
 	if(waveOutOpen(&hWaveOut,(UINT)dwDeviceID,(LPWAVEFORMATEX)&wfWaveFormat,(DWORD)hWaveWnd,0,CALLBACK_WINDOW|WAVE_ALLOWSYNC) != MMSYSERR_NOERROR) return -1;
-	
+
 	bDevOpen=TRUE;
-	
+
 	// initialize the headers...
 	if(InitWaveHeaders() < 0)
 	{
@@ -158,9 +158,9 @@ int StartWavePlay(DWORD dwDeviceID)
 		CloseWavePlay();
 		return -3;
 	}
-	
+
 	nModeFlag=PLAY;
-	
+
 	// and queue the next buffer up...
 	QueueWaveBuffer();
 
@@ -177,7 +177,7 @@ int QueueWaveBuffer()
 
 	// reset flags field (remove WHDR_DONE attribute)...
 	whWaveHead[nBufIndex].dwFlags=(DWORD)WHDR_PREPARED;
-		
+
 	// now queue the buffer for output...
 	if(waveOutWrite(hWaveOut,&whWaveHead[nBufIndex],sizeof(WAVEHDR)) != MMSYSERR_NOERROR)
 	{
@@ -187,7 +187,7 @@ int QueueWaveBuffer()
 
 	// toggle for next buffer...
 	nBufIndex=1-nBufIndex;
-	
+
 	return 0;
 }
 
@@ -234,7 +234,7 @@ int StopWavePlay()
 
 	bDataEnd=FALSE;
 	nModeFlag=STOP;
-	
+
 	// close the device and unprepare the headers...
 	CloseWavePlay();
 
@@ -252,7 +252,7 @@ int CloseWavePlay()
 
 	// close the device...
 	waveOutClose(hWaveOut);
-	
+
 	bDevOpen=FALSE;
 
 	return 0;
@@ -263,38 +263,38 @@ int InitWaveThread(void)
 	WNDCLASS wc;
 
 	// Set wave window class data
-	wc.style=0; 
-    wc.lpfnWndProc=WaveWndProc; 
-    wc.cbClsExtra=0; 
-    wc.cbWndExtra=0; 
-    wc.hInstance=NULL; 
+	wc.style=0;
+    wc.lpfnWndProc=WaveWndProc;
+    wc.cbClsExtra=0;
+    wc.cbWndExtra=0;
+    wc.hInstance=NULL;
     wc.hIcon=NULL;
 	wc.hCursor=NULL;
-    wc.hbrBackground=NULL; 
-	wc.lpszMenuName=NULL; 
-	wc.lpszClassName=szClassName; 
+    wc.hbrBackground=NULL;
+	wc.lpszMenuName=NULL;
+	wc.lpszClassName=szClassName;
 
 	// Register wave window class
     if(RegisterClass(&wc) == 0) return(ERR);
 
 	// Create wave window
-    hWaveWnd=CreateWindow(szClassName,szWndName,0,0,0,0,0, NULL,NULL,NULL,NULL); 
-    if(hWaveWnd == NULL) 
+    hWaveWnd=CreateWindow(szClassName,szWndName,0,0,0,0,0, NULL,NULL,NULL,NULL);
+    if(hWaveWnd == NULL)
 	{
 		CleanWaveThread();
 		return(ERR);
 	}
- 
+
 	return(OK);
 }
 
 DWORD WINAPI ExecWaveThread(void)
 {
-    MSG	msg; 
+    MSG	msg;
 
 	// Initialize wave thread
 	if(InitWaveThread() == ERR) return(1L);
-	
+
 	// Execute thread
     while(1)
 	{
@@ -302,7 +302,7 @@ DWORD WINAPI ExecWaveThread(void)
 		if(GetMessage(&msg,NULL,0,0) != 0) DispatchMessage(&msg);
 		else break;
 	}
- 
+
 	// Cleanup wave thread
 	if(CleanWaveThread() == ERR) return(1L);
 
@@ -320,7 +320,7 @@ int CleanWaveThread(void)
 int CheckWaveThread(void)
 {
 	DWORD	dwExitCode;
-	
+
 	// Get wave thread exit code
 	if(GetExitCodeThread(hWaveThread,&dwExitCode) == 0) return(ERR);
 
@@ -352,12 +352,12 @@ LRESULT CALLBACK WaveWndProc(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam)
 			break;
 
 		// Cleanup
-		case WM_DESTROY: 
-			PostQuitMessage(0L); 
+		case WM_DESTROY:
+			PostQuitMessage(0L);
 			break;
 
 		default:
-			return(DefWindowProc(hWnd,uMsg,wParam,lParam)); 
+			return(DefWindowProc(hWnd,uMsg,wParam,lParam));
 	}
 
 	return(0L);

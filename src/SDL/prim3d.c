@@ -55,7 +55,7 @@ void primLine3(vector *p1, vector *p2, color c)
 
     blendon = glIsEnabled(GL_BLEND);
     if (!blendon) glEnable(GL_BLEND);
-    glEnable(GL_LINE_SMOOTH);
+    //glEnable(GL_LINE_SMOOTH); TODO:HACK!
     rndAdditiveBlends(FALSE);
 
     glColor3ub(colRed(c), colGreen(c), colBlue(c));
@@ -65,7 +65,7 @@ void primLine3(vector *p1, vector *p2, color c)
     glEnd();
 
     if (!blendon) glDisable(GL_BLEND);
-    glDisable(GL_LINE_SMOOTH);
+    //glDisable(GL_LINE_SMOOTH); TODO:HACK!
 }
 
 /*-----------------------------------------------------------------------------
@@ -244,7 +244,7 @@ void primCircleOutline3(vector *centre, real32 radius, sdword nSlices,
 
     glShadeModel(GL_SMOOTH);
     glEnable(GL_BLEND);
-    glEnable(GL_LINE_SMOOTH);
+    //glEnable(GL_LINE_SMOOTH);
     rndAdditiveBlends(FALSE);
 
     vec_ptr = &vertices->vertice[0];
@@ -343,7 +343,7 @@ void primCircleOutline3(vector *centre, real32 radius, sdword nSlices,
     }
 
     glDisable(GL_BLEND);
-    glDisable(GL_LINE_SMOOTH);
+    //glDisable(GL_LINE_SMOOTH) TODO:HACK;
 }
 
 /*-----------------------------------------------------------------------------

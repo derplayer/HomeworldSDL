@@ -11,7 +11,7 @@
 #include <string.h>
 #include <time.h>
 
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 #include "AIPlayer.h"
 #include "AutoLOD.h"
@@ -107,16 +107,16 @@ static char windowTitle[] = "Homeworld";//name of window
 char ersWindowInit[] = "Error creating window";
 
 //screen width, height
-int MAIN_WindowWidth = 640;
-int MAIN_WindowHeight = 480;
-int MAIN_WindowDepth = 16;
+sdword MAIN_WindowWidth = 640;
+sdword MAIN_WindowHeight = 480;
+sdword MAIN_WindowDepth = 16;
 
 sdword mainWidthAdd = 0;
 sdword mainHeightAdd = 0;
 
-int mainWindowWidth;
-int mainWindowHeight;
-int mainWindowDepth;
+sdword mainWindowWidth;
+sdword mainWindowHeight;
+sdword mainWindowDepth;
 #ifdef _WIN32
 void *ghMainWindow = NULL;
 void *ghInstance = NULL;
@@ -170,7 +170,7 @@ bool GLOBAL_NO_TEXTURES = FALSE;
 
 // turn fullscreen off when debugging so that if the debugger kicks in
 // after a crash you don't find yourself locked out and have to reboot...
-#if defined(_MACOSX) && defined(HW_BUILD_FOR_DEBUGGING) 
+#if defined(_MACOSX) && defined(HW_BUILD_FOR_DEBUGGING)
 bool fullScreen = FALSE;
 #else
 bool fullScreen = TRUE;
@@ -1883,7 +1883,7 @@ sdword HandleEvent (const SDL_Event* pEvent)
                 }
             }
             break;
-            
+
         // Currently written with use of SpaceNavigator in mind (since that's
         // what I've got). Needs to be rewritten to be a little more generic
         // using mappings of registered joystick axes to functionality.
@@ -1896,28 +1896,28 @@ sdword HandleEvent (const SDL_Event* pEvent)
             {
                 break;
             }
-            
-            switch (pEvent->jaxis.axis) 
+
+            switch (pEvent->jaxis.axis)
             {
                 // zoom: +ve multiplier = zoom out
-                
-                case 1: // translation (+/-) forwards-backwards 
+
+                case 1: // translation (+/-) forwards-backwards
                     // camJoyZoom = -1 * pEvent->jaxis.value;
                     break;
-                    
+
                 case 2: // translation (+/-) up-down
                     camJoyZoom = -1 * pEvent->jaxis.value;
                     break;
 
                 // declination: +ve multiplier = move toward north pole
-                
+
                 case 3: // pitch (+/-) back-forward  - declination
                     camJoyDeclination = +1 * pEvent->jaxis.value;
                     break;
 
                 // right ascension: +ve multiplier = anti clockwise about z-axis
 
-                case 0: // translation (+/-) left-right 
+                case 0: // translation (+/-) left-right
                     // camJoyRightAscension = -1 * pEvent->jaxis.value;
                     break;
 
@@ -1929,16 +1929,16 @@ sdword HandleEvent (const SDL_Event* pEvent)
                     camJoyRightAscension = -1 * pEvent->jaxis.value;
                     break;
 
-                default: 
-                    break; 
+                default:
+                    break;
             }
 
-#if DEBUG_JOYSTICK_CAMERA            
+#if DEBUG_JOYSTICK_CAMERA
             dbgMessagef("joystick: dec(%6d) asc(%6d) zoom(%6d)", camJoyDeclination, camJoyRightAscension, camJoyZoom);
 #endif
-            break; 
-    
-    
+            break;
+
+
         case SDL_QUIT:
             if (mainActuallyQuit)
             {

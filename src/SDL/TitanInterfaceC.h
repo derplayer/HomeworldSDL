@@ -290,10 +290,10 @@ void titanConnectToClient(Address *address);
 int titanStartChatServer(wchar_t *password);
 
 void titanSendPing(Address *address,unsigned int pingsizebytes);
-void titanSendPointMessage(int playerIndex,unsigned char *packet,unsigned int sizeofPacket);
-void titanSendBroadcastMessage(unsigned char *packet,unsigned int sizeofPacket);
-void titanAnyoneSendPointMessage(int playerIndex,unsigned char *packet,unsigned int sizeofPacket);
-void titanAnyoneSendBroadcastMessage(unsigned char *packet,unsigned int sizeofPacket);
+//void titanSendPointMessage(int playerIndex,unsigned char *packet,unsigned int sizeofPacket);
+//void titanSendBroadcastMessage(unsigned char *packet,unsigned int sizeofPacket);
+//void titanAnyoneSendPointMessage(int playerIndex,unsigned char *packet,unsigned int sizeofPacket);
+//void titanAnyoneSendBroadcastMessage(unsigned char *packet,unsigned int sizeofPacket);
 void titanPumpEngine();
 
 void titanSetGameKey(unsigned char *key);

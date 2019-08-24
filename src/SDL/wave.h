@@ -18,13 +18,13 @@
 // Other constants
 #define STOP	0
 #define PLAY	1
-                
+
 #define WAVE_BUFSIZE 32768		// buffer about 32K
 #define WAVE_SAMPLERATE	22050	// sample rate
 #define WAVE_BITSAMPLE	16		// bits per sample
 #define WAVE_NUMCHAN	2		// number of channels
 
-// External functions 
+// External functions
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -39,7 +39,7 @@ int StopWavePlay();
 }
 #endif
 
-// Internal functions 
+// Internal functions
 int AllocWaveFormat();
 int FreeWaveFormat();
 

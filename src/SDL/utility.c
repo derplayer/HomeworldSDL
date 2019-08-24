@@ -13,8 +13,8 @@
 #include <string.h>
 #include <sys/stat.h>
 
-#include "SDL.h"
-#include "SDL_syswm.h"
+#include "SDL/SDL.h"
+#include "SDL/SDL_syswm.h"
 
 #include "AIPlayer.h"
 #include "Animatic.h"
@@ -122,10 +122,11 @@
     #include <sys/mman.h>
     #include <unistd.h>
 #else
-    #include <sys/mman.h>
+    //#include <sys/mman.h>
+    //#include <kos.h>
     #include <unistd.h>
-    #include <X11/Xlib.h>
-    #include <X11/keysym.h>
+    //#include <X11/Xlib.h>
+    //#include <X11/keysym.h>
 #endif
 
 #ifdef _MSC_VER
@@ -133,7 +134,7 @@
 	#define stat _stat
 	#define S_ISDIR(mode) ((mode) & _S_IFDIR)
 	#define mkdir(p) _mkdir(p)
-    
+
     #include <direct.h>  // for _mkdir
 #else
     #include <strings.h>
@@ -149,7 +150,7 @@
 
 #define UTY_CONFIG_FILENAME  "Homeworld.cfg"
 
-extern int MAIN_WindowWidth, MAIN_WindowHeight, MAIN_WindowDepth;
+extern sdword MAIN_WindowWidth, MAIN_WindowHeight, MAIN_WindowDepth;
 
 extern udword gDevcaps, gDevcaps2;
 
@@ -259,7 +260,7 @@ bool onlygetfirstcrc = FALSE;
 scriptEntry WonStuffSet[] =
 {
     makeEntry(HomeworldCRC,scriptSetHomeworldCRC),
-    
+
     END_SCRIPT_ENTRY
 };
 
@@ -962,7 +963,7 @@ void utyOptionsFileWrite(void)
                 *((bool *)utyOptionsList[index].dataPtr) ? "TRUE" : "FALSE");
         }
     }
-    
+
     fclose(f);
 
 }
@@ -2002,7 +2003,7 @@ abortloading:
     {
         rndSetClearColor(universe.backgroundColor|0xff000000);
     }
-    
+
     /* restore sound engine */
     soundEventPause(FALSE);
 
@@ -2010,7 +2011,7 @@ abortloading:
     {
         soundEventPlayMusic(SongNumber);
     }
-    
+
     // reset any spurious joystick motion that's been recorded
     cameraJoystickReset();
 
@@ -2536,7 +2537,7 @@ void utySinglePlayerOptions(char *name, featom *atom)
 #endif
         return;
     }
-    
+
     feScreenDisappear(NULL,NULL);
     feScreenStart(ghMainRegion, "Create_new_game");
 }
@@ -3341,7 +3342,7 @@ void scriptSetHomeworldCRC(char *directory,char *field,void *dataToFillIn)
         HomeworldCRC[2] = crc[2];
         HomeworldCRC[3] = crc[3];
     }
-    
+
     onlygetfirstcrc = TRUE;
 }
 
@@ -3478,7 +3479,8 @@ void *utyGrowthHeapAlloc(sdword size)
 #ifdef _WIN32
     return((void *)VirtualAlloc(NULL, size, MEM_COMMIT, PAGE_READWRITE));
 #else
-    return mmap(0, size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
+    //return mmap(0, size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
+    return NULL; //TODO: FIX
 #endif
 }
 
@@ -3584,8 +3586,8 @@ char* utyGameSystemsPreInit(void)
     {
         // HW_Data is set. overwrite current setting.
         // But make sure that there isn't a trailing slash
-        
-        if (dataPath[(strlen(dataPath) - 1 )] == '/') 
+
+        if (dataPath[(strlen(dataPath) - 1 )] == '/')
         {
             dataPath[(strlen(dataPath) - 1 )] = '\0';
         }
@@ -3605,7 +3607,7 @@ char* utyGameSystemsPreInit(void)
         // directory, not a real .big file)
         strcpy(filePathTempBuffer, fileHomeworldDataPath);
         strcat(filePathTempBuffer, "/Override.big");
-        
+
         overrideBigPath = filePathTempBuffer;
 #else
         // in absence of environment vars (like in a retail install), assume
@@ -3635,7 +3637,7 @@ char* utyGameSystemsPreInit(void)
 		// Use the user's own Homeworld configuration dir if possible or
 		// else use the Homeworld data directory itself.
         char *homeDir = getenv("HOME");
-        
+
 		if (homeDir != NULL)
 		{
 			snprintf(filePathTempBuffer, PATH_MAX, "%s/" CONFIGDIR, homeDir);
@@ -3800,12 +3802,13 @@ char* utyGameSystemsPreInit(void)
             MemoryHeapSize = min(newSize, MEM_HeapDefaultMax);
         }
     }
-    
+
 #ifdef _WIN32
     utyMemoryHeap = (void *)VirtualAlloc(NULL, MemoryHeapSize + sizeof(memcookie) * 4, MEM_COMMIT, PAGE_READWRITE);
 #else
-    utyMemoryHeap = mmap(0, MemoryHeapSize + sizeof(memcookie) * 4,
-        PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
+    //utyMemoryHeap = mmap(0, MemoryHeapSize + sizeof(memcookie) * 4,
+    //    PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
+    utyMemoryHeap = NULL;
 #endif
 
     if (utyMemoryHeap == NULL)
@@ -3895,17 +3898,17 @@ char *utyGameSystemsInit(void)
 
     dbgMessagef(
         "Homeworld CRCs:\n"
-        "%22s = 0x%x\n"    
-        "%22s = 0x%x\n"    
-        "%22s = 0x%x\n"    
-        "%22s = 0x%x"    
+        "%22s = 0x%x\n"
+        "%22s = 0x%x\n"
+        "%22s = 0x%x\n"
+        "%22s = 0x%x"
         ,
         "HomeworldSDL.big TOC", HomeworldCRC[0], // was CRC for code block (WON hacked client check)
         "Update.big TOC",       HomeworldCRC[1],
         "Homeworld.big TOC",    HomeworldCRC[2],
         "(not used)",           HomeworldCRC[3]  // never been used
     );
-    
+
     // startup any SDL systems we want that haven't already been kicked off
     sdlSubsystemFlags = SDL_WasInit(SDL_INIT_EVERYTHING);
 
@@ -3916,7 +3919,7 @@ char *utyGameSystemsInit(void)
             return "Unable to initialize SDL Timer.";
         }
     }
-    
+
     // Joystick used for controlling the 3D camera view. It can be any old
     // joystick but this is primarily intended to support devices used for
     // 3D CAD applications which have more degrees of freedom (6) than typical
@@ -3925,26 +3928,26 @@ char *utyGameSystemsInit(void)
     if (!(sdlSubsystemFlags & SDL_INIT_JOYSTICK))
     {
         int joystick_i = 0;
-        
+
         if (SDL_InitSubSystem(SDL_INIT_JOYSTICK) == -1)
         {
             return "Unable to initialize SDL Joystick.";
         }
-        
+
         for (joystick_i = 0; joystick_i < SDL_NumJoysticks(); ++joystick_i)
         {
             if (strcmp(SDL_JoystickName(joystick_i), "SpaceNavigator") == 0)
             {
                 SDL_Joystick *joystick;
-                
+
                 SDL_JoystickEventState(SDL_ENABLE);
                 joystick = SDL_JoystickOpen(joystick_i);
-                
+
                 dbgMessagef("SpaceNavigator found at index %d", joystick_i);
             }
         }
     }
-    
+
     utyTimerDivisor = 1000 / UTY_TimerResolutionMax;
     utySet(SSA_Timer);
                                                             //start the task manager
@@ -4694,7 +4697,7 @@ char *utyGameSystemsShutdown(void)
     if (utyTest2(SS2_ToggleKeys))
     {
 #ifndef _LINUX_FIX_ME
-        utyToggleKeyStatesRestore();
+        //utyToggleKeyStatesRestore();
 #endif
     }
 
@@ -4946,6 +4949,7 @@ void utyToggleKeyStatesSave(void)
     Outputs     :
     Return      :
 ----------------------------------------------------------------------------*/
+/*
 void utyToggleKeyStatesRestore(void)
 {
     Uint8* state;
@@ -5034,15 +5038,15 @@ void utyToggleKeyStatesRestore(void)
             KeyPressMask, &xe);
 #endif
     }
-    /* Modifying internal keystate array.  Original HW source code did this
+    Modifying internal keystate array.  Original HW source code did this
        using the Windows API SetKeyboardState() function, so hopefully we get
        the same result here ("state" already points to the internal array used
-       by SDL). */
+       by SDL).
     state[SDLK_CAPSLOCK]  = (state[SDLK_CAPSLOCK]  & 0xfe) | (utyCapsLockState);
     state[SDLK_NUMLOCK]   = (state[SDLK_NUMLOCK]   & 0xfe) | (utyNumLockState);
     state[SDLK_SCROLLOCK] = (state[SDLK_SCROLLOCK] & 0xfe) | (utyScrollLockState);
 }
-
+*/
 /*-----------------------------------------------------------------------------
     Name        : utyCapsLockToggleState
     Description : Returns the toggle state of the caps lock key

@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
-#include "SDL.h"
-#include "SDL_thread.h"
+#include "SDL/SDL.h"
+#include "SDL/SDL_thread.h"
 #ifdef HW_ENABLE_NETWORK
 #include "SDL_net.h"
 #endif
@@ -150,10 +150,10 @@ int broadcastStartThread(void *data)
 		else
 			SDL_Delay(100);
 	}
-	
+
 	SDLNet_UDP_Close(broadcastRecvSock);
 	broadcastRecvSock = NULL;
-	
+
 	return 0;
 }
 
@@ -269,7 +269,7 @@ Uint32 connectToServer(Uint32 serverIP)
 	IPaddress ipToConnect;
 	Uint32 ipViewed;
 	int numrdy, result;
-	
+
 	if(SDLNet_ResolveHost(&ipToConnect,NULL,TCPPORT)==-1)
 	{
 		exit(2);
@@ -304,12 +304,12 @@ Uint32 connectToServer(Uint32 serverIP)
 
 	// Switching to Client Mode.
 	clientActive = 1;
-	
-	
+
+
 	printf("Manage to connect");
-	
+
 	//addSockToList(sock);
-	return ipViewed;	
+	return ipViewed;
 }
 
 
@@ -336,7 +336,7 @@ int TCPServerStartThread(void *data)
 	{
 		printf("can't create Server TCP socket \n");
 		exit(3);
-	}	
+	}
 
 
 	clientSet = SDLNet_AllocSocketSet(1);
@@ -351,12 +351,12 @@ int TCPServerStartThread(void *data)
 
 						printf("size of packet received %d\n",lenPacket);
 						printf("message type %d\n",typMsg);
-		
+
 
 	while(endNetwork)
 	{
 		int numready;
-	
+
 		if(clientActive == 0)
 		{
 			numready=SDLNet_CheckSockets(setSock, (Uint32)500);
@@ -386,7 +386,7 @@ int TCPServerStartThread(void *data)
 						printf("SDLNet_TCP_Send: %s\n", SDLNet_GetError());
 						printf("Error sending back Ip");
 					}
-					
+
 				}
 				else
 					printf("No new connection\n");
@@ -422,7 +422,7 @@ int TCPServerStartThread(void *data)
 			}
 
 			numready=SDLNet_CheckSockets(clientSet, (Uint32)500);
-			
+
 			// Code as a client
 			if(SDLNet_SocketReady(clientSock))
 			{
@@ -466,7 +466,7 @@ Client * addSockToList(TCPsocket sock)
 	IPaddress *remoteIp;
 	remoteIp = SDLNet_TCP_GetPeerAddress(sock);
 
-	if(remoteIp != NULL)	
+	if(remoteIp != NULL)
 	{
 		SDL_SemWait(semList);
 		TCPClientsConnected = (Client*) realloc (TCPClientsConnected, (numTCPClientConnected+1)*sizeof(Client));
@@ -496,7 +496,7 @@ void removeSockFromList(int num)
 TCPsocket findSockInList(Uint32 addressSock)
 {
 	TCPsocket sock;
-	
+
 	int i;
 	for (i=0; i < numTCPClientConnected; i++)
 		if (addressSock == TCPClientsConnected[i].IP.host)
@@ -569,7 +569,7 @@ void putPacket(Uint32 address, unsigned char msgType, const void* data, unsigned
 unsigned char getPacket(TCPsocket sock, unsigned char* msgType, Uint8** packetData, unsigned short* packetLen)
 {
 	int result;
-	
+
 	if(*packetData)
 		free(*packetData);
 	*packetData = NULL;
@@ -609,7 +609,7 @@ unsigned char getPacket(TCPsocket sock, unsigned char* msgType, Uint8** packetDa
 		}
 	}
 //	printf("packet received\n");
-	return *msgType;	
+	return *msgType;
 }
 
 

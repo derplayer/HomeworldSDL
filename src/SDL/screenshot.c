@@ -12,7 +12,8 @@
     #define WIN32_LEAN_AND_MEAN
     #include <windows.h>
 #else
-    #include <sys/mman.h>
+    //missing in dreamcast KOS
+    //#include <sys/mman.h>
 #endif
 
 #include "Debug.h"
@@ -38,10 +39,10 @@ static void _ssAppendScreenshotFilename(char* savePath)
     FILE        *imageFile;
     char         imagePath[PATH_MAX + 1],
                  imageName[256];
-                 
+
     time_t       now;
     struct tm    timeStruct;
-    
+
     unsigned int attempts          =  0,
                  sleep_time_secs   =  1,
                  max_attempts_secs = 10;
@@ -49,17 +50,17 @@ static void _ssAppendScreenshotFilename(char* savePath)
     while (1) {
         time(&now);
         timeStruct = *localtime(&now);
-        
+
         strftime(imageName, sizeof(imageName), "shot_%Y%m%d_%H%M%S_%Z.jpg", &timeStruct);
 
         strcpy(imagePath, savePath);
         strcat(imagePath, imageName);
-        
+
         // unable to open filename so presumably good name to use
         if ((imageFile = fopen(imagePath, "r")) == NULL) {
             break;
         }
-        
+
         fclose(imageFile);
         attempts++;
         sleep(sleep_time_secs);    // rapid screenshots possibly: wait and try again
@@ -133,6 +134,8 @@ static void _ssSaveScreenshot(ubyte* buf)
 
 void ssTakeScreenshot(void)
 {
+    return;
+/*
     ubyte* screenshot_buffer =
 #ifdef _WIN32
         (void *)VirtualAlloc(NULL, 3 * MAIN_WindowWidth * MAIN_WindowHeight,  // 3 = RGB
@@ -145,10 +148,10 @@ void ssTakeScreenshot(void)
     if (screenshot_buffer != NULL)
     {
         int result = 0;
-        
+
         glReadPixels(0, 0, MAIN_WindowWidth, MAIN_WindowHeight,
             GL_RGB, GL_UNSIGNED_BYTE, screenshot_buffer);
-            
+
         _ssSaveScreenshot(screenshot_buffer);
 
 #ifdef _WIN32
@@ -158,5 +161,7 @@ void ssTakeScreenshot(void)
         result = munmap(screenshot_buffer, 3*MAIN_WindowWidth*MAIN_WindowHeight);
         dbgAssertOrIgnore(result != -1);
 #endif
+
     }
+*/
 }

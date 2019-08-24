@@ -197,7 +197,7 @@ void primRectSolid2(rectangle *rect, color c)
     glVertex2f(primScreenToGLX(rect->x0), primScreenToGLY(rect->y1));
     glVertex2f(primScreenToGLX(rect->x1), primScreenToGLY(rect->y1));
     glVertex2f(primScreenToGLX(rect->x1), primScreenToGLY(rect->y0));
-    glEnd(); 
+    glEnd();
 }
 
 /*-----------------------------------------------------------------------------
@@ -221,7 +221,7 @@ void primRectTranslucent2(rectangle* rect, color c)
     glVertex2f(primScreenToGLX(rect->x1), primScreenToGLY(rect->y1));
     glVertex2f(primScreenToGLX(rect->x1), primScreenToGLY(rect->y0));
     glEnd();
-    
+
     if (!blendOn) glDisable(GL_BLEND);
 }
 
@@ -361,9 +361,9 @@ void primOvalArcOutline2(oval *o, real32 radStart, real32 radEnd, sdword thickne
 
     x = centreX + (real32)sin((double)radStart) * width;    //first vertex
     y = centreY + (real32)cos((double)radStart) * height;
- 
+
     glVertex2f(x, y);
-    
+
     segment++;
     angle = (real32)segment * (2.0f * PI / (real32)segments);
     angleInc = (2.0f * PI / (real32)segments);
@@ -374,14 +374,14 @@ void primOvalArcOutline2(oval *o, real32 radStart, real32 radEnd, sdword thickne
         y = centreY + (real32)cos((double)angle) * height;
 
         glVertex2f(x, y);
-        
+
         angle += angleInc;                                  //update angle
     }
     x = centreX + (real32)sin((double)radEnd) * width;
     y = centreY + (real32)cos((double)radEnd) * height;
 
     glVertex2f(x, y);                                       //draw last vertex
-    
+
     glEnd();
     glLineWidth(linewidth);
 }
@@ -445,13 +445,13 @@ void primLine2(sdword x0, sdword y0, sdword x1, sdword y1, color c)
 
     blendon = glIsEnabled(GL_BLEND);
     if (!blendon) glEnable(GL_BLEND);
-    glEnable(GL_LINE_SMOOTH);
+    //glEnable(GL_LINE_SMOOTH) TODO: HACK;
     glColor3ub(colRed(c), colGreen(c), colBlue(c));
     glBegin(GL_LINES);
     glVertex2f(primScreenToGLX(x0), primScreenToGLY(y0));
     glVertex2f(primScreenToGLX(x1), primScreenToGLY(y1));
     glEnd();
-    glDisable(GL_LINE_SMOOTH);
+    //glDisable(GL_LINE_SMOOTH) TODO:HACK;
     if (!blendon) glDisable(GL_BLEND);
 }
 
@@ -509,7 +509,7 @@ void primLineLoopStart2(sdword thickness, color c)
 {
     glGetFloatv(GL_LINE_WIDTH, &LLlinewidth);
     LLblendon = glIsEnabled(GL_BLEND);
-    glEnable(GL_LINE_SMOOTH);
+    //glEnable(GL_LINE_SMOOTH) TODO: HACK;
     if (!LLblendon) glEnable(GL_BLEND);
     glColor3ub(colRed(c), colGreen(c), colBlue(c));
     glLineWidth((GLfloat)thickness);
@@ -540,7 +540,7 @@ void primLineLoopEnd2(void)
     glEnd();
     glLineWidth(LLlinewidth);
     if (!LLblendon) glDisable(GL_BLEND);
-    glDisable(GL_LINE_SMOOTH);
+    //glDisable(GL_LINE_SMOOTH) TODO:HACK;
 }
 
 /*-----------------------------------------------------------------------------
