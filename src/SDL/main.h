@@ -7,7 +7,7 @@
 #ifndef ___MAIN_H
 #define ___MAIN_H
 
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 #include "mainswitches.h"
 #include "Types.h"
@@ -15,13 +15,13 @@
 // -----------------------------------------------------------------------------
 // Make sure the game is being compiled with the correct build configuration
 // -----------------------------------------------------------------------------
- 
+
 #define HW_GAME_TYPE_COUNT    defined( HW_GAME_HOMEWORLD      ) \
                             + defined( HW_GAME_RAIDER_RETREAT ) \
                             + defined( HW_GAME_DEMO           )
 
 #define HW_BUILD_TYPE_COUNT   defined( HW_BUILD_FOR_DEBUGGING    ) \
-                            + defined( HW_BUILD_FOR_DISTRIBUTION ) 
+                            + defined( HW_BUILD_FOR_DISTRIBUTION )
 
 
 #if HW_GAME_TYPE_COUNT != 1

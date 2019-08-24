@@ -9,20 +9,20 @@
 #include "Clipper.h"
 
 #include "glinc.h"
-
+#include <GL/gl.h>
 
 #define CORRECT_BBOX_CLIP  0
 
 #ifndef DEPTH_SCALE
     #define DEPTH_SCALE      65535.0f
-    
+
     #define CLIP_RIGHT_BIT   0x0001
     #define CLIP_LEFT_BIT    0x0002
     #define CLIP_TOP_BIT     0x0004
     #define CLIP_BOTTOM_BIT  0x0008
     #define CLIP_NEAR_BIT    0x0010
     #define CLIP_FAR_BIT     0x0020
-    
+
     #define CLIP_ALL_BITS    0x3f
 #endif
 

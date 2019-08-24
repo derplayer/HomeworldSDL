@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="HomeworldSDL" />
+		<Option pch_mode="2" />
+		<Option compiler="dc-gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/HomeworldSDL.elf" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="5" />
+				<Option compiler="dc-gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g -Wa,-g -Wl,-g" />
+					<Add option="-DDEBUG" />
+					<Add option="-DHW_GAME_HOMEWORLD" />
+					<Add option="-DHW_BUILD_FOR_DEBUGGING" />
+					<Add option="-D__DISABLE_SSE__" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Ships" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/SDL" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Game" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/CRC" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/JPG" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/LZSS" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/Titan" />
+				</Compiler>
+				<Linker>
+					<Add option="obj\Debug\romdisk.o" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Ships" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/SDL" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Game" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/HomeworldSDL.elf" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="5" />
+				<Option compiler="dc-gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+					<Add option="-DRELEASE" />
+				</Compiler>
+				<Linker>
+					<Add option="obj\Release\romdisk.o" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="DREAMSDK_MKRDOBJ" value="C:\DreamSDK\msys\1.0\opt\dreamsdk\ide\mkrdobj.cmd" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="SDL" />
+			<Add library="parallax" />
+			<Add library="dcplib" />
+			<Add library="imageload" />
+			<Add library="kosh" />
+			<Add library="oggvorbisplay" />
+			<Add library="opusplay" />
+			<Add library="modplug" />
+			<Add library="conio" />
+			<Add library="kmg" />
+			<Add library="jpeg" />
+			<Add library="opusfile" />
+			<Add library="pcx" />
+			<Add library="png" />
+			<Add library="tga" />
+			<Add library="vorbis" />
+			<Add library="opus" />
+			<Add library="mp3" />
+			<Add library="ogg" />
+			<Add library="bz2" />
+			<Add library="z" />
+			<Add library="ppp" />
+			<Add library="kosext2fs" />
+			<Add library="kosutils" />
+			<Add library="m" />
+			<Add library="stdc++" />
+		</Linker>
+		<ExtraCommands>
+			<Add before="$(DREAMSDK_MKRDOBJ) $(PROJECT_DIR) $(TARGET_OBJECT_DIR) $(TARGET_OUTPUT_FILE)" />
+		</ExtraCommands>
+		<Unit filename="Game/AIAttackMan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIAttackMan.h" />
+		<Unit filename="Game/AIDefenseMan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIDefenseMan.h" />
+		<Unit filename="Game/AIEvents.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIEvents.h" />
+		<Unit filename="Game/AIFeatures.h" />
+		<Unit filename="Game/AIFleetMan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIFleetMan.h" />
+		<Unit filename="Game/AIHandler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIHandler.h" />
+		<Unit filename="Game/AIMoves.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIMoves.h" />
+		<Unit filename="Game/AIOrders.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIOrders.h" />
+		<Unit filename="Game/AIPlayer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIPlayer.h" />
+		<Unit filename="Game/AIResourceMan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIResourceMan.h" />
+		<Unit filename="Game/AIShip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIShip.h" />
+		<Unit filename="Game/AITeam.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AITeam.h" />
+		<Unit filename="Game/AITrack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AITrack.h" />
+		<Unit filename="Game/AIUtilities.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIUtilities.h" />
+		<Unit filename="Game/AIVar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AIVar.h" />
+		<Unit filename="Game/Alliance.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Alliance.h" />
+		<Unit filename="Game/Animatic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Animatic.h" />
+		<Unit filename="Game/Attack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Attack.h" />
+		<Unit filename="Game/Attributes.h" />
+		<Unit filename="Game/AutoDownloadMap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AutoDownloadMap.h" />
+		<Unit filename="Game/AutoLOD.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/AutoLOD.h" />
+		<Unit filename="Game/B-Spline.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/B-Spline.h" />
+		<Unit filename="Game/BMP.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/BMP.h" />
+		<Unit filename="Game/BTG.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/BTG.h" />
+		<Unit filename="Game/Battle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Battle.h" />
+		<Unit filename="Game/BigFile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/BigFile.h" />
+		<Unit filename="Game/Blobs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Blobs.h" />
+		<Unit filename="Game/Bounties.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Bounties.h" />
+		<Unit filename="Game/Camera.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Camera.h" />
+		<Unit filename="Game/CameraCommand.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/CameraCommand.h" />
+		<Unit filename="Game/Captaincy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Captaincy.h" />
+		<Unit filename="Game/ChannelFSM.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ChannelFSM.h" />
+		<Unit filename="Game/Chatting.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Chatting.h" />
+		<Unit filename="Game/Clamp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Clamp.h" />
+		<Unit filename="Game/ClassDefs.h" />
+		<Unit filename="Game/Clipper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Clipper.h" />
+		<Unit filename="Game/Clouds.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Clouds.h" />
+		<Unit filename="Game/ColPick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ColPick.h" />
+		<Unit filename="Game/Collision.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Collision.h" />
+		<Unit filename="Game/Color.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Color.h" />
+		<Unit filename="Game/CommandDefs.h" />
+		<Unit filename="Game/CommandLayer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/CommandLayer.h" />
+		<Unit filename="Game/CommandNetwork.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/CommandNetwork.h" />
+		<Unit filename="Game/CommandWrap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/CommandWrap.h" />
+		<Unit filename="Game/ConsMgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ConsMgr.h" />
+		<Unit filename="Game/Crates.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Crates.h" />
+		<Unit filename="Game/Damage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Damage.h" />
+		<Unit filename="Game/Debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Debug.h" />
+		<Unit filename="Game/Demo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Demo.h" />
+		<Unit filename="Game/Dock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Dock.h" />
+		<Unit filename="Game/ETG.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ETG.h" />
+		<Unit filename="Game/Eval.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Eval.h" />
+		<Unit filename="Game/FEColour.h" />
+		<Unit filename="Game/FEFlow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/FEFlow.h" />
+		<Unit filename="Game/FEReg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/FEReg.h" />
+		<Unit filename="Game/FastMath.h" />
+		<Unit filename="Game/File.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/File.h" />
+		<Unit filename="Game/FlightMan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/FlightMan.h" />
+		<Unit filename="Game/FlightManDefs.h" />
+		<Unit filename="Game/FontReg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/FontReg.h" />
+		<Unit filename="Game/Formation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Formation.h" />
+		<Unit filename="Game/FormationDefs.h" />
+		<Unit filename="Game/GameChat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/GameChat.h" />
+		<Unit filename="Game/GamePick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/GamePick.h" />
+		<Unit filename="Game/GameStats.h" />
+		<Unit filename="Game/Globals.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Globals.h" />
+		<Unit filename="Game/Gun.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Gun.h" />
+		<Unit filename="Game/HS.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/HS.h" />
+		<Unit filename="Game/Hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Hash.h" />
+		<Unit filename="Game/HorseRace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/HorseRace.h" />
+		<Unit filename="Game/InfoOverlay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/InfoOverlay.h" />
+		<Unit filename="Game/KAS.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/KAS.h" />
+		<Unit filename="Game/KASFunc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/KASFunc.h" />
+		<Unit filename="Game/KNITransform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Key.h" />
+		<Unit filename="Game/KeyBindings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/KeyBindings.h" />
+		<Unit filename="Game/LOD.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/LOD.h" />
+		<Unit filename="Game/LagPrint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/LagPrint.h" />
+		<Unit filename="Game/LaunchMgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/LaunchMgr.h" />
+		<Unit filename="Game/LevelLoad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/LevelLoad.h" />
+		<Unit filename="Game/Light.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Light.h" />
+		<Unit filename="Game/LinkedList.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/LinkedList.h" />
+		<Unit filename="Game/MEX.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/MEX.h" />
+		<Unit filename="Game/MadLinkIn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/MadLinkIn.h" />
+		<Unit filename="Game/MadLinkInDefs.h" />
+		<Unit filename="Game/Matrix-mult.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Matrix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Matrix.h" />
+		<Unit filename="Game/MaxMultiplayer.h" />
+		<Unit filename="Game/Memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Memory.h" />
+		<Unit filename="Game/Mesh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Mesh.h" />
+		<Unit filename="Game/MeshAnim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/MeshAnim.h" />
+		<Unit filename="Game/MultiplayerGame.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/MultiplayerGame.h" />
+		<Unit filename="Game/MultiplayerLANGame.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/MultiplayerLANGame.h" />
+		<Unit filename="Game/NIS.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/NIS.h" />
+		<Unit filename="Game/NavLights.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/NavLights.h" />
+		<Unit filename="Game/Nebulae.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Nebulae.h" />
+		<Unit filename="Game/NetCheck.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/NetCheck.h" />
+		<Unit filename="Game/ObjTypes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ObjTypes.h" />
+		<Unit filename="Game/Objectives.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Objectives.h" />
+		<Unit filename="Game/Options.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Options.h" />
+		<Unit filename="Game/Particle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Particle.h" />
+		<Unit filename="Game/Physics.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Physics.h" />
+		<Unit filename="Game/PiePlate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/PiePlate.h" />
+		<Unit filename="Game/Ping.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Ping.h" />
+		<Unit filename="Game/PlugScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/PlugScreen.h" />
+		<Unit filename="Game/ProfileTimers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ProfileTimers.h" />
+		<Unit filename="Game/RaceDefs.h" />
+		<Unit filename="Game/Randy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Randy.h" />
+		<Unit filename="Game/Region.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Region.h" />
+		<Unit filename="Game/ResCollect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ResCollect.h" />
+		<Unit filename="Game/ResearchAPI.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ResearchAPI.h" />
+		<Unit filename="Game/ResearchGUI.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ResearchGUI.h" />
+		<Unit filename="Game/SaveGame.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/SaveGame.h" />
+		<Unit filename="Game/ScenPick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ScenPick.h" />
+		<Unit filename="Game/Scroller.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Scroller.h" />
+		<Unit filename="Game/Select.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Select.h" />
+		<Unit filename="Game/Sensors.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Sensors.h" />
+		<Unit filename="Game/Shader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Shader.h" />
+		<Unit filename="Game/ShipSelect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ShipSelect.h" />
+		<Unit filename="Game/ShipView.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/ShipView.h" />
+		<Unit filename="Game/SinglePlayer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/SinglePlayer.h" />
+		<Unit filename="Game/SoundEvent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/SoundEvent.h" />
+		<Unit filename="Game/SoundEventDefs.h" />
+		<Unit filename="Game/SoundEventPlay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/SoundEventPrivate.h" />
+		<Unit filename="Game/SoundEventStop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/SoundMusic.h" />
+		<Unit filename="Game/SoundStructs.h" />
+		<Unit filename="Game/SpaceObj.h" />
+		<Unit filename="Game/SpeechEvent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/SpeechEvent.h" />
+		<Unit filename="Game/Star3d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Star3d.h" />
+		<Unit filename="Game/StatScript.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/StatScript.h" />
+		<Unit filename="Game/Stats.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Stats.h" />
+		<Unit filename="Game/StringSupport.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/StringSupport.h" />
+		<Unit filename="Game/StringsOnly.h" />
+		<Unit filename="Game/Subtitle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Subtitle.h" />
+		<Unit filename="Game/Switches.h" />
+		<Unit filename="Game/Tactical.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Tactical.h" />
+		<Unit filename="Game/Tactics.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Tactics.h" />
+		<Unit filename="Game/Task.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Task.h" />
+		<Unit filename="Game/TaskBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/TaskBar.h" />
+		<Unit filename="Game/Teams.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Teams.h" />
+		<Unit filename="Game/Timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Timer.h" />
+		<Unit filename="Game/TitanNet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/TitanNet.h" />
+		<Unit filename="Game/Tracking.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Tracking.h" />
+		<Unit filename="Game/TradeMgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/TradeMgr.h" />
+		<Unit filename="Game/Trails.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Trails.h" />
+		<Unit filename="Game/Transformer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Transformer.h" />
+		<Unit filename="Game/Tutor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Tutor.h" />
+		<Unit filename="Game/Tweak.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Tweak.h" />
+		<Unit filename="Game/Twiddle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Twiddle.h" />
+		<Unit filename="Game/Types.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Types.h" />
+		<Unit filename="Game/UIControls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/UIControls.h" />
+		<Unit filename="Game/Undo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Undo.h" />
+		<Unit filename="Game/UnivUpdate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/UnivUpdate.h" />
+		<Unit filename="Game/Universe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Universe.h" />
+		<Unit filename="Game/Vector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Vector.h" />
+		<Unit filename="Game/VolTweakDefs.h" />
+		<Unit filename="Game/Volume.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Game/Volume.h" />
+		<Unit filename="Game/cpuid.h" />
+		<Unit filename="Game/functions.h" />
+		<Unit filename="Game/wrap.h" />
+		<Unit filename="Game/wrap_types.h" />
+		<Unit filename="Game/wrapped_unlisted_functions.h" />
+		<Unit filename="SDL/ClientCDKey.cpp" />
+		<Unit filename="SDL/ClientCDKey.h" />
+		<Unit filename="SDL/NetworkInterface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/NetworkInterface.h" />
+		<Unit filename="SDL/Queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/Queue.h" />
+		<Unit filename="SDL/TimeoutTimer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/TimeoutTimer.h" />
+		<Unit filename="SDL/Titan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/Titan.h" />
+		<Unit filename="SDL/TitanInterface.cpp" />
+		<Unit filename="SDL/TitanInterface.h" />
+		<Unit filename="SDL/TitanInterfaceC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/TitanInterfaceC.h" />
+		<Unit filename="SDL/TitanInterfaceC.stub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/TitanPacketMsg.cpp" />
+		<Unit filename="SDL/TitanPacketMsg.h" />
+		<Unit filename="SDL/avi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/avi.h" />
+		<Unit filename="SDL/dct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/dct.h" />
+		<Unit filename="SDL/debugwnd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/debugwnd.h" />
+		<Unit filename="SDL/devstats.h" />
+		<Unit filename="SDL/font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/font.h" />
+		<Unit filename="SDL/fqcodec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/fqcodec.h" />
+		<Unit filename="SDL/fqeffect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/fqeffect.h" />
+		<Unit filename="SDL/fquant.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/fquant.h" />
+		<Unit filename="SDL/glinc.h" />
+		<Unit filename="SDL/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/main.h" />
+		<Unit filename="SDL/mainrgn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/mainrgn.h" />
+		<Unit filename="SDL/mainswitches.h" />
+		<Unit filename="SDL/mixfft.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/mixfft.h" />
+		<Unit filename="SDL/mouse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/mouse.h" />
+		<Unit filename="SDL/prim2d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/prim2d.h" />
+		<Unit filename="SDL/prim3d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/prim3d.h" />
+		<Unit filename="SDL/regkey.h" />
+		<Unit filename="SDL/render.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/render.h" />
+		<Unit filename="SDL/resource.h" />
+		<Unit filename="SDL/rglu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/rglu.h" />
+		<Unit filename="SDL/rinit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/rinit.h" />
+		<Unit filename="SDL/screenshot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/screenshot.h" />
+		<Unit filename="SDL/smixer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/soundcmn.h" />
+		<Unit filename="SDL/soundlow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/soundlow.h" />
+		<Unit filename="SDL/sstream.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/standard_library.h" />
+		<Unit filename="SDL/texreg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/texreg.h" />
+		<Unit filename="SDL/utility.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/utility.h" />
+		<Unit filename="SDL/wave.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SDL/wave.h" />
+		<Unit filename="SDL/win32glue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/AdvanceSupportFrigate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/AdvanceSupportFrigate.h" />
+		<Unit filename="Ships/Carrier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/Carrier.h" />
+		<Unit filename="Ships/CloakGenerator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/CloakGenerator.h" />
+		<Unit filename="Ships/DDDFrigate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/DDDFrigate.h" />
+		<Unit filename="Ships/DFGFrigate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/DFGFrigate.h" />
+		<Unit filename="Ships/DefaultShip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/DefaultShip.h" />
+		<Unit filename="Ships/DefenseFighter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/DefenseFighter.h" />
+		<Unit filename="Ships/Drone.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/Drone.h" />
+		<Unit filename="Ships/FloatingCity.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/FloatingCity.h" />
+		<Unit filename="Ships/GenericDefender.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/GenericDefender.h" />
+		<Unit filename="Ships/GenericInterceptor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/GenericInterceptor.h" />
+		<Unit filename="Ships/GravWellGenerator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/GravWellGenerator.h" />
+		<Unit filename="Ships/HeavyCorvette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/HeavyCorvette.h" />
+		<Unit filename="Ships/HeavyCruiser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/HeavyCruiser.h" />
+		<Unit filename="Ships/IonCannonFrigate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/IonCannonFrigate.h" />
+		<Unit filename="Ships/LightCorvette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/LightCorvette.h" />
+		<Unit filename="Ships/MinelayerCorvette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/MinelayerCorvette.h" />
+		<Unit filename="Ships/MissileDestroyer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/MissileDestroyer.h" />
+		<Unit filename="Ships/Mothership.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/Mothership.h" />
+		<Unit filename="Ships/MultiGunCorvette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/MultiGunCorvette.h" />
+		<Unit filename="Ships/P1IonArrayFrigate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P1IonArrayFrigate.h" />
+		<Unit filename="Ships/P1MissileCorvette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P1MissileCorvette.h" />
+		<Unit filename="Ships/P1Mothership.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P1Mothership.h" />
+		<Unit filename="Ships/P1StandardCorvette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P1StandardCorvette.h" />
+		<Unit filename="Ships/P2AdvanceSwarmer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P2AdvanceSwarmer.h" />
+		<Unit filename="Ships/P2FuelPod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P2FuelPod.h" />
+		<Unit filename="Ships/P2Mothership.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P2Mothership.h" />
+		<Unit filename="Ships/P2MultiBeamFrigate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P2MultiBeamFrigate.h" />
+		<Unit filename="Ships/P2Swarmer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P2Swarmer.h" />
+		<Unit filename="Ships/P3StandardShip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/P3StandardShip.h" />
+		<Unit filename="Ships/Probe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/Probe.h" />
+		<Unit filename="Ships/ProximitySensor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/ProximitySensor.h" />
+		<Unit filename="Ships/RepairCorvette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/RepairCorvette.h" />
+		<Unit filename="Ships/ResearchShip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/ResearchShip.h" />
+		<Unit filename="Ships/ResourceCollector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/ResourceCollector.h" />
+		<Unit filename="Ships/ResourceController.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/ResourceController.h" />
+		<Unit filename="Ships/SalCapCorvette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/SalCapCorvette.h" />
+		<Unit filename="Ships/SensorArray.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/SensorArray.h" />
+		<Unit filename="Ships/ShipDefs.h" />
+		<Unit filename="Ships/Ships.h" />
+		<Unit filename="Ships/StandardDestroyer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/StandardDestroyer.h" />
+		<Unit filename="Ships/StandardFrigate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ships/StandardFrigate.h" />
+		<Unit filename="ThirdParty/CRC/CRC32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/CRC/CRC32.h" />
+		<Unit filename="ThirdParty/JPG/ansi2knr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/cderror.h" />
+		<Unit filename="ThirdParty/JPG/cdjpeg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/cdjpeg.h" />
+		<Unit filename="ThirdParty/JPG/cjpeg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/ckconfig.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/djpeg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/example.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/interfce.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/interfce.h" />
+		<Unit filename="ThirdParty/JPG/jaricom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcapimin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcapistd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcarith.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jccoefct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jccolor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcdctmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jchuff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcinit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcmainct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcmarker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcmaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcomapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jconfig.h" />
+		<Unit filename="ThirdParty/JPG/jcparam.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcprepct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jcsample.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jctrans.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdapimin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdapistd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdarith.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdatadst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdatasrc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdcoefct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdcolor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdct.h" />
+		<Unit filename="ThirdParty/JPG/jddctmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdhuff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdinput.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdmainct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdmarker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdmaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdmerge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdpostct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdsample.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jdtrans.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jerror.h" />
+		<Unit filename="ThirdParty/JPG/jfdctflt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jfdctfst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jfdctint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jidctflt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jidctfst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jidctint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jinclude.h" />
+		<Unit filename="ThirdParty/JPG/jmemansi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jmemdos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jmemmac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jmemmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jmemname.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jmemnobs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jmemsys.h" />
+		<Unit filename="ThirdParty/JPG/jmorecfg.h" />
+		<Unit filename="ThirdParty/JPG/jpegint.h" />
+		<Unit filename="ThirdParty/JPG/jpeglib.h" />
+		<Unit filename="ThirdParty/JPG/jpegtran.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jquant1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jquant2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jutils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/jversion.h" />
+		<Unit filename="ThirdParty/JPG/rdbmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/rdcolmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/rdgif.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/rdjpgcom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/rdppm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/rdrle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/rdswitch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/rdtarga.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/transupp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/transupp.h" />
+		<Unit filename="ThirdParty/JPG/wrbmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/wrgif.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/wrjpgcom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/wrppm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/wrrle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/JPG/wrtarga.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/LZSS/BitIO.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/LZSS/BitIO.h" />
+		<Unit filename="ThirdParty/LZSS/LZSS.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ThirdParty/LZSS/LZSS.h" />
+		<Unit filename="ThirdParty/Titan/ServerStatus.h" />
+		<Unit filename="homeworld.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="romdisk/romfs.txt" />
+		<Extensions>
+			<debugger>
+				<remote_debugging target="Debug">
+					<options conn_type="0" ip_address="localhost" ip_port="2159" loader_waiting_time="0" />
+				</remote_debugging>
+			</debugger>
+			<code_completion />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

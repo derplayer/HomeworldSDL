@@ -12,7 +12,7 @@
 
 #include <math.h>
 
-#define fsqrt(x)     (real32)sqrtf((real32)(x))
+#define fsqrtRelic(x)     (real32)sqrtf((real32)(x))
 #define fmathSqrt(x) (real32)sqrtf((real32)(x))
 #define fmathSqrtDouble sqrt
 

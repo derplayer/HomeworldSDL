@@ -1,0 +1,2765 @@
+# depslib dependency file v1.0
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiattackman.c
+	"AIAttackMan.h"
+	"AIFeatures.h"
+	"AIHandler.h"
+	"AIMoves.h"
+	"AIOrders.h"
+	"MultiplayerGame.h"
+	"Randy.h"
+	"Select.h"
+	"Stats.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiattackman.h
+	"AIPlayer.h"
+	"AITeam.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiplayer.h
+	"AITeam.h"
+	"AIVar.h"
+	"LinkedList.h"
+	"ShipDefs.h"
+	"ShipSelect.h"
+	"SpaceObj.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiteam.h
+	"AIEvents.h"
+	"AIUtilities.h"
+	"AIVar.h"
+	"KAS.h"
+	"ShipDefs.h"
+	"ShipSelect.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aievents.h
+	"ShipSelect.h"
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\shipselect.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\spaceobj.h
+	"Color.h"
+	"ETG.h"
+	"Globals.h"
+	"LinkedList.h"
+	"LOD.h"
+	"Matrix.h"
+	"MaxMultiplayer.h"
+	"MeshAnim.h"
+	"Nebulae.h"
+	"ObjTypes.h"
+	"SoundStructs.h"
+	"Trails.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\color.h
+	"Types.h"
+
+1566425785 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\types.h
+	<SDL/SDL_stdinc.h>
+	<SDL/SDL_endian.h>
+	<windows.h>
+	<sys/syslimits.h>
+	<limits.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\etg.h
+	"ClassDefs.h"
+	"Color.h"
+	"ObjTypes.h"
+	"Matrix.h"
+	"Mesh.h"
+	"RaceDefs.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\classdefs.h
+
+1566425885 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\objtypes.h
+	"RaceDefs.h"
+	"ShipDefs.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\racedefs.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\shipdefs.h
+	"Types.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\matrix.h
+	"Types.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\vector.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\mesh.h
+	"Color.h"
+	"Matrix.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\globals.h
+	"MaxMultiplayer.h"
+	"Queue.h"
+	"TitanInterfaceC.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\maxmultiplayer.h
+
+1566426007 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\queue.h
+	<SDL/SDL.h>
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\titaninterfacec.h
+	<stdlib.h>
+	<wchar.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\linkedlist.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\lod.h
+	"Mesh.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\meshanim.h
+	"B-Spline.h"
+	"CRC32.h"
+	"Mesh.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\b-spline.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\thirdparty\crc\crc32.h
+	<stdint.h>
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\nebulae.h
+	"Clouds.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\clouds.h
+	"Color.h"
+	"Matrix.h"
+	"ObjTypes.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\soundstructs.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\trails.h
+	"Color.h"
+	"MaxMultiplayer.h"
+	"Types.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiutilities.h
+	"Blobs.h"
+	"ShipSelect.h"
+	"SpaceObj.h"
+	"Universe.h"
+	"Volume.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\blobs.h
+	"Color.h"
+	"LinkedList.h"
+	"ShipSelect.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\universe.h
+	"CameraCommand.h"
+	"CommandLayer.h"
+	"ConsMgr.h"
+	"GameStats.h"
+	"ResearchAPI.h"
+	"Star3d.h"
+	"Task.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\cameracommand.h
+	"Camera.h"
+	"ShipSelect.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\camera.h
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\commandlayer.h
+	"Dock.h"
+	"Formation.h"
+	"ResCollect.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\dock.h
+	"render.h"
+	"ShipSelect.h"
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\render.h
+	"Camera.h"
+	"Color.h"
+	"Matrix.h"
+	"SpaceObj.h"
+	"Types.h"
+	"Task.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\task.h
+	<stdlib.h>
+	"LinkedList.h"
+	"Debug.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\debug.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\formation.h
+	"FormationDefs.h"
+	"ShipSelect.h"
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\formationdefs.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\rescollect.h
+	"Attributes.h"
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\attributes.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\consmgr.h
+	"ClassDefs.h"
+	"ObjTypes.h"
+	"Region.h"
+	"ShipDefs.h"
+	"SpaceObj.h"
+	"Task.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\region.h
+	"Memory.h"
+	"Debug.h"
+	"Key.h"
+	"prim2d.h"
+	"Task.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\memory.h
+	"LinkedList.h"
+	"Task.h"
+
+1566426165 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\key.h
+	<SDL/SDL_keysym.h>
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\prim2d.h
+	"Color.h"
+	"main.h"
+
+1566426172 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\main.h
+	<SDL/SDL.h>
+	"mainswitches.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\mainswitches.h
+	"MaxMultiplayer.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\gamestats.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\researchapi.h
+	"LinkedList.h"
+	"ObjTypes.h"
+	"ShipDefs.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\star3d.h
+	"Color.h"
+	"Types.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\volume.h
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aivar.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\kas.h
+	"AIUtilities.h"
+	"ShipSelect.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aifeatures.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aihandler.h
+	"AITeam.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aimoves.h
+	"AITeam.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiorders.h
+	"AIUtilities.h"
+	"ShipSelect.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\multiplayergame.h
+	"LinkedList.h"
+	"TitanInterfaceC.h"
+	"TimeoutTimer.h"
+	"UIControls.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\timeouttimer.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\uicontrols.h
+	"FEFlow.h"
+	"font.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\feflow.h
+	"Color.h"
+	"Region.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\font.h
+	"Color.h"
+	"prim2d.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\randy.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\select.h
+	"PiePlate.h"
+	"Camera.h"
+	"font.h"
+	"prim2d.h"
+	"ShipSelect.h"
+	"Types.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\pieplate.h
+	"Color.h"
+	"SpaceObj.h"
+	"Types.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\stats.h
+	"ShipDefs.h"
+	"ShipSelect.h"
+	"StatScript.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\statscript.h
+	"ObjTypes.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aidefenseman.c
+	"AIDefenseMan.h"
+	"AIFeatures.h"
+	"AIFleetMan.h"
+	"AIHandler.h"
+	"AIMoves.h"
+	"AIOrders.h"
+	"Randy.h"
+	"Select.h"
+	"Stats.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aidefenseman.h
+	"AIPlayer.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aifleetman.h
+	"AIPlayer.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aievents.c
+	"AIEvents.h"
+	"AIPlayer.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aifleetman.c
+	"AIFleetMan.h"
+	"AIAttackMan.h"
+	"AIDefenseMan.h"
+	"AIFeatures.h"
+	"Alliance.h"
+	"AIResourceMan.h"
+	"CommandWrap.h"
+	"MultiplayerGame.h"
+	"Randy.h"
+	"SinglePlayer.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\alliance.h
+	"CommandNetwork.h"
+	"Types.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\commandnetwork.h
+	"Captaincy.h"
+	"Chatting.h"
+	"CommandLayer.h"
+	"Globals.h"
+	"MaxMultiplayer.h"
+	"SpaceObj.h"
+	"Switches.h"
+	"Task.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\captaincy.h
+	"MaxMultiplayer.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\chatting.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\switches.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\airesourceman.h
+	"AIPlayer.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\commandwrap.h
+	"CommandLayer.h"
+	"Globals.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\singleplayer.h
+	"KAS.h"
+	"LinkedList.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aihandler.c
+	"AIHandler.h"
+	"AIFeatures.h"
+	"AIMoves.h"
+	"AIOrders.h"
+	"AIPlayer.h"
+	"GravWellGenerator.h"
+	"Randy.h"
+	"Select.h"
+	"UnivUpdate.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\gravwellgenerator.h
+	"LinkedList.h"
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\univupdate.h
+	"LinkedList.h"
+	"ShipSelect.h"
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aimoves.c
+	"AIMoves.h"
+	"AIFeatures.h"
+	"AIFleetMan.h"
+	"AIHandler.h"
+	"AIPlayer.h"
+	"AIUtilities.h"
+	"CommandDefs.h"
+	"CommandWrap.h"
+	"FastMath.h"
+	"Randy.h"
+	"SalCapCorvette.h"
+	"SaveGame.h"
+	"Select.h"
+	"SinglePlayer.h"
+	"Tutor.h"
+	"UnivUpdate.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\commanddefs.h
+
+1566650019 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\fastmath.h
+	"Types.h"
+	<math.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\salcapcorvette.h
+	"Attack.h"
+	"ShipSelect.h"
+	"render.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\attack.h
+	"SpaceObj.h"
+	"StatScript.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\savegame.h
+	"ShipSelect.h"
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\tutor.h
+	"FEFlow.h"
+	"prim2d.h"
+	"ShipDefs.h"
+	"ShipSelect.h"
+	"SpaceObj.h"
+	"Types.h"
+	"Volume.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiorders.c
+	"AIOrders.h"
+	"AIEvents.h"
+	"AIHandler.h"
+	"AIMoves.h"
+	"AIPlayer.h"
+	"AIVar.h"
+	"GravWellGenerator.h"
+	"Randy.h"
+	"Select.h"
+	"Stats.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiplayer.c
+	"AIPlayer.h"
+	"AIAttackMan.h"
+	"AIDefenseMan.h"
+	"AIFleetMan.h"
+	"AIResourceMan.h"
+	"File.h"
+	"NIS.h"
+	"Randy.h"
+	"SaveGame.h"
+	"SinglePlayer.h"
+	"Stats.h"
+	"Tweak.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\file.h
+	<stdio.h>
+	<sys/syslimits.h>
+	"BigFile.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\bigfile.h
+	"CRC32.h"
+	"standard_library.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\standard_library.h
+	<stdarg.h>
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<malloc/malloc.h>
+	<stdlib.h>
+	<windows.h>
+	<direct.h>
+	<windows.h>
+	<direct.h>
+	<io.h>
+	<sys/stat.h>
+	<dirent.h>
+	<unistd.h>
+	<windows.h>
+	<sys/time.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\nis.h
+	"B-Spline.h"
+	"Camera.h"
+	"font.h"
+	"Key.h"
+	"ShipDefs.h"
+	"ShipSelect.h"
+	"SpaceObj.h"
+	"StatScript.h"
+	"Task.h"
+	"texreg.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\texreg.h
+	"Color.h"
+	"CRC32.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\tweak.h
+	"ClassDefs.h"
+	"Color.h"
+	"ObjTypes.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\airesourceman.c
+	"AIResourceMan.h"
+	"AIDefenseMan.h"
+	"AIFeatures.h"
+	"AIFleetMan.h"
+	"AIOrders.h"
+	"MultiplayerGame.h"
+	"Randy.h"
+	"Select.h"
+	"StatScript.h"
+	"UnivUpdate.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiship.c
+	"AIShip.h"
+	"AITrack.h"
+	"Alliance.h"
+	"Blobs.h"
+	"Collision.h"
+	"CommandDefs.h"
+	"FlightManDefs.h"
+	"FormationDefs.h"
+	"FastMath.h"
+	"Physics.h"
+	"ProfileTimers.h"
+	"Randy.h"
+	"Ships.h"
+	"Tactics.h"
+	"Tweak.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiship.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aitrack.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\collision.h
+	"Blobs.h"
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\flightmandefs.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\physics.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\profiletimers.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\ships.h
+	"AdvanceSupportFrigate.h"
+	"Carrier.h"
+	"CloakGenerator.h"
+	"DDDFrigate.h"
+	"DFGFrigate.h"
+	"DefaultShip.h"
+	"DefenseFighter.h"
+	"Drone.h"
+	"FloatingCity.h"
+	"GenericDefender.h"
+	"GenericInterceptor.h"
+	"GravWellGenerator.h"
+	"HeavyCorvette.h"
+	"HeavyCruiser.h"
+	"IonCannonFrigate.h"
+	"LightCorvette.h"
+	"MinelayerCorvette.h"
+	"MissileDestroyer.h"
+	"Mothership.h"
+	"MultiGunCorvette.h"
+	"P1IonArrayFrigate.h"
+	"P1MissileCorvette.h"
+	"P1Mothership.h"
+	"P1StandardCorvette.h"
+	"P2AdvanceSwarmer.h"
+	"P2FuelPod.h"
+	"P2Mothership.h"
+	"P2MultiBeamFrigate.h"
+	"P2Swarmer.h"
+	"P3StandardShip.h"
+	"Probe.h"
+	"ProximitySensor.h"
+	"RepairCorvette.h"
+	"ResearchShip.h"
+	"ResourceCollector.h"
+	"ResourceController.h"
+	"SalCapCorvette.h"
+	"SensorArray.h"
+	"StandardDestroyer.h"
+	"StandardFrigate.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\advancesupportfrigate.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\carrier.h
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\cloakgenerator.h
+	"LinkedList.h"
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\dddfrigate.h
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\dfgfrigate.h
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\defaultship.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\defensefighter.h
+	"FlightMan.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\flightman.h
+	"FlightManDefs.h"
+	"ObjTypes.h"
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\drone.h
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\floatingcity.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\genericdefender.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\genericinterceptor.h
+	"ClassDefs.h"
+	"FlightMan.h"
+	"ObjTypes.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\heavycorvette.h
+	"Attack.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\heavycruiser.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\ioncannonfrigate.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\lightcorvette.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\minelayercorvette.h
+	"Attack.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\missiledestroyer.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\mothership.h
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\multiguncorvette.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p1ionarrayfrigate.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p1missilecorvette.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p1mothership.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p1standardcorvette.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p2advanceswarmer.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p2fuelpod.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p2mothership.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p2multibeamfrigate.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p2swarmer.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\p3standardship.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\probe.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\proximitysensor.h
+	"ShipSelect.h"
+	"SpaceObj.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\repaircorvette.h
+	"Attack.h"
+	"ShipSelect.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\researchship.h
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\resourcecollector.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\resourcecontroller.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\sensorarray.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\standarddestroyer.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\standardfrigate.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\tactics.h
+	"ClassDefs.h"
+	"CommandLayer.h"
+	"Region.h"
+	"SpaceObj.h"
+	"Task.h"
+	"Vector.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiteam.c
+	"AITeam.h"
+	"AIFeatures.h"
+	"AIFleetMan.h"
+	"AIHandler.h"
+	"AIMoves.h"
+	"AIPlayer.h"
+	"CommandDefs.h"
+	"GravWellGenerator.h"
+	"SaveGame.h"
+	"Select.h"
+	"Tactics.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aitrack.c
+	"AITrack.h"
+	"AIShip.h"
+	"FastMath.h"
+	"Physics.h"
+	"StatScript.h"
+	"Universe.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aiutilities.c
+	"AIUtilities.h"
+	"AIFeatures.h"
+	"AIHandler.h"
+	"AIMoves.h"
+	"AIPlayer.h"
+	"AIShip.h"
+	"Alliance.h"
+	"Collision.h"
+	"CommandDefs.h"
+	"CommandWrap.h"
+	"FastMath.h"
+	"Randy.h"
+	"Select.h"
+	"Ships.h"
+	"Stats.h"
+	"Tactics.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\aivar.c
+	"AIVar.h"
+	"Debug.h"
+	"Memory.h"
+	"SaveGame.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\alliance.c
+	"Alliance.h"
+	"CommandDefs.h"
+	"CommandWrap.h"
+	"GameChat.h"
+	"SoundEvent.h"
+	"SpeechEvent.h"
+	"StringsOnly.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\gamechat.h
+	"MultiplayerGame.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\soundevent.h
+	"SoundEventDefs.h"
+	"SoundMusic.h"
+	"SoundStructs.h"
+	"SpaceObj.h"
+	"SpeechEvent.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\soundeventdefs.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\soundmusic.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\speechevent.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\stringsonly.h
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\attack.c
+	"Attack.h"
+	"AIShip.h"
+	"AITrack.h"
+	"Collision.h"
+	"CommandDefs.h"
+	"CommandLayer.h"
+	"Debug.h"
+	"FastMath.h"
+	"Gun.h"
+	"Physics.h"
+	"Randy.h"
+	"Tweak.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\gun.h
+	"SpaceObj.h"
+	"render.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\autodownloadmap.c
+	"AutoDownloadMap.h"
+	"Debug.h"
+	"File.h"
+	"Globals.h"
+	"HorseRace.h"
+	"Memory.h"
+	"standard_library.h"
+	"StringsOnly.h"
+	"Titan.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\autodownloadmap.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\horserace.h
+	"CommandNetwork.h"
+	"MaxMultiplayer.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\titan.h
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\b-spline.c
+	"B-Spline.h"
+	"Debug.h"
+	"Memory.h"
+	"Vector.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\battle.c
+	"Battle.h"
+	"Alliance.h"
+	"CommandDefs.h"
+	"FastMath.h"
+	"Gun.h"
+	"mainrgn.h"
+	"Ping.h"
+	"Randy.h"
+	"Select.h"
+	"SoundEvent.h"
+	"StatScript.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\battle.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\mainrgn.h
+	"Camera.h"
+	"FEFlow.h"
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\ping.h
+	"Blobs.h"
+	"Camera.h"
+	"prim2d.h"
+	"ShipSelect.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\bigfile.c
+	<fnmatch.h>
+	<sys/syslimits.h>
+	<sys/stat.h>
+	"BigFile.h"
+	"BitIO.h"
+	"LZSS.h"
+	"standard_library.h"
+	"Memory.h"
+	"Debug.h"
+	"File.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\thirdparty\lzss\bitio.h
+	<stdio.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\thirdparty\lzss\lzss.h
+	<stdio.h>
+	"BitIO.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\blobs.c
+	"Blobs.h"
+	"Alliance.h"
+	"Battle.h"
+	"Debug.h"
+	"FastMath.h"
+	"Memory.h"
+	"GravWellGenerator.h"
+	"Sensors.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\sensors.h
+	"FEFlow.h"
+	"Matrix.h"
+	"ShipDefs.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\bmp.c
+	"BMP.h"
+	"Debug.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\bmp.h
+	"Color.h"
+	"File.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\bounties.c
+	"Bounties.h"
+	"MultiplayerGame.h"
+	"Tweak.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\bounties.h
+	"Universe.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\camera.c
+	"Camera.h"
+	"FastMath.h"
+	"Key.h"
+	"render.h"
+	"StatScript.h"
+	"Universe.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\cameracommand.c
+	"CameraCommand.h"
+	"Alliance.h"
+	"FastMath.h"
+	"Select.h"
+	"Sensors.h"
+	"Ships.h"
+	"SinglePlayer.h"
+	"StatScript.h"
+	"Tutor.h"
+	"Tweak.h"
+	"Universe.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\captaincy.c
+	"Captaincy.h"
+	"CommandNetwork.h"
+	"CommandWrap.h"
+	"Debug.h"
+	"File.h"
+	"Memory.h"
+	"standard_library.h"
+	"utility.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\utility.h
+	"FEFlow.h"
+	"ObjTypes.h"
+	"Region.h"
+	"TitanInterfaceC.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\channelfsm.c
+	"ChannelFSM.h"
+	"MultiplayerGame.h"
+	"ServerStatus.h"
+	"StringSupport.h"
+	"TitanInterfaceC.h"
+	"TitanNet.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\channelfsm.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\thirdparty\titan\serverstatus.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\stringsupport.h
+	"StringsOnly.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\titannet.h
+	"TitanInterfaceC.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\chatting.c
+	"Chatting.h"
+	"Alliance.h"
+	"CommandNetwork.h"
+	"Debug.h"
+	"GameChat.h"
+	"HorseRace.h"
+	"MultiplayerGame.h"
+	"MultiplayerLANGame.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\multiplayerlangame.h
+	"MultiplayerGame.h"
+	"TitanInterfaceC.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\clamp.c
+	"Clamp.h"
+	"Debug.h"
+	"Memory.h"
+	"Physics.h"
+	"Universe.h"
+	"UnivUpdate.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\clamp.h
+	"SpaceObj.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\collision.c
+	"Collision.h"
+	"Alliance.h"
+	"Debug.h"
+	"FastMath.h"
+	"NIS.h"
+	"prim3d.h"
+	"Ships.h"
+	"SinglePlayer.h"
+	"Tactics.h"
+	"Universe.h"
+	"UnivUpdate.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\prim3d.h
+	"Color.h"
+	"texreg.h"
+	"Types.h"
+	"Vector.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\color.c
+	<math.h>
+	"Color.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\colpick.c
+	"ColPick.h"
+	"FastMath.h"
+	"font.h"
+	"FontReg.h"
+	"mainrgn.h"
+	"Memory.h"
+	"mouse.h"
+	"prim2d.h"
+	"Region.h"
+	"render.h"
+	"StatScript.h"
+	"Teams.h"
+	"utility.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\colpick.h
+	"Color.h"
+	"ObjTypes.h"
+	"texreg.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\fontreg.h
+	"font.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\mouse.h
+	"prim2d.h"
+	"ShipSelect.h"
+	"SpaceObj.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\teams.h
+	"Color.h"
+	"MaxMultiplayer.h"
+	"texreg.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\commandlayer.c
+	"CommandLayer.h"
+	"AIPlayer.h"
+	"AIShip.h"
+	"AITrack.h"
+	"Alliance.h"
+	"Battle.h"
+	"Collision.h"
+	"CommandDefs.h"
+	"CommandNetwork.h"
+	"FastMath.h"
+	"MadLinkIn.h"
+	"Memory.h"
+	"NetCheck.h"
+	"Ping.h"
+	"Randy.h"
+	"Select.h"
+	"Ships.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"SpeechEvent.h"
+	"StatScript.h"
+	"Tactics.h"
+	"Tutor.h"
+	"Tweak.h"
+	"Universe.h"
+	"UnivUpdate.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\madlinkin.h
+	"CommandLayer.h"
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\netcheck.h
+	"CommandNetwork.h"
+	"Switches.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\commandnetwork.c
+	"CommandNetwork.h"
+	"AutoDownloadMap.h"
+	"HorseRace.h"
+	"LagPrint.h"
+	"MultiplayerGame.h"
+	"NetCheck.h"
+	"Sensors.h"
+	"TimeoutTimer.h"
+	"Titan.h"
+	"TitanNet.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	"utility.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\lagprint.h
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\commandwrap.c
+	"CommandWrap.h"
+	"CommandDefs.h"
+	"CommandNetwork.h"
+	"InfoOverlay.h"
+	"MultiplayerGame.h"
+	"Options.h"
+	"Select.h"
+	"Ships.h"
+	"SoundEvent.h"
+	"SpeechEvent.h"
+	"Tutor.h"
+	"Tweak.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\infooverlay.h
+	"Region.h"
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\options.h
+	"Key.h"
+	"Region.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\crates.c
+	"Crates.h"
+	"AITrack.h"
+	"Blobs.h"
+	"LevelLoad.h"
+	"MultiplayerGame.h"
+	"PiePlate.h"
+	"Randy.h"
+	"Sensors.h"
+	"SoundEvent.h"
+	"StatScript.h"
+	"Universe.h"
+	"UnivUpdate.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\crates.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\levelload.h
+	"ObjTypes.h"
+	"ShipDefs.h"
+	"Universe.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\debug.c
+	"Debug.h"
+	"File.h"
+	"utility.h"
+	<stdarg.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\demo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"File.h"
+	"Memory.h"
+	"Debug.h"
+	"Region.h"
+	"mouse.h"
+	"UnivUpdate.h"
+	"Camera.h"
+	"mainrgn.h"
+	"Select.h"
+	"render.h"
+	"NetCheck.h"
+	"Demo.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\demo.h
+	"Key.h"
+	"Randy.h"
+	"Task.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\dock.c
+	"Dock.h"
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	"AIShip.h"
+	"AITrack.h"
+	"AIVar.h"
+	"Alliance.h"
+	"Battle.h"
+	"Clamp.h"
+	"Collision.h"
+	"CommandDefs.h"
+	"CommandLayer.h"
+	"DDDFrigate.h"
+	"Debug.h"
+	"Drone.h"
+	"FastMath.h"
+	"LaunchMgr.h"
+	"LinkedList.h"
+	"MadLinkIn.h"
+	"MadLinkInDefs.h"
+	"Memory.h"
+	"Mothership.h"
+	"ObjTypes.h"
+	"Physics.h"
+	"prim3d.h"
+	"Randy.h"
+	"ResearchShip.h"
+	"SalCapCorvette.h"
+	"Select.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"SpeechEvent.h"
+	"Tactics.h"
+	"Tutor.h"
+	"Tweak.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\launchmgr.h
+	"Region.h"
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\madlinkindefs.h
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\eval.c
+	<stdio.h>
+	<math.h>
+	<ctype.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	"Types.h"
+	"Randy.h"
+	"Eval.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\eval.h
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\file.c
+	<limits.h>
+	<stdarg.h>
+	<stdlib.h>
+	<string.h>
+	<sys/stat.h>
+	<sys/types.h>
+	"BitIO.h"
+	"Debug.h"
+	"File.h"
+	"LZSS.h"
+	"Memory.h"
+	<windows.h>
+	<direct.h>
+	<dirent.h>
+	<ctype.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\flightman.c
+	"FlightMan.h"
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"AIShip.h"
+	"AITrack.h"
+	"Debug.h"
+	"FastMath.h"
+	"Memory.h"
+	"Physics.h"
+	"Randy.h"
+	"SoundEvent.h"
+	"StatScript.h"
+	"Universe.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\animatic.c
+	"Animatic.h"
+	"avi.h"
+	"File.h"
+	"glinc.h"
+	"mouse.h"
+	"NIS.h"
+	"rglu.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"soundlow.h"
+	"StringSupport.h"
+	"Subtitle.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\animatic.h
+	"Types.h"
+
+1566423231 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\avi.h
+	"Types.h"
+
+1566426302 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\glinc.h
+	<GLES/egl.h>
+	<GLES/glext.h>
+	<SDL/SDL_opengl.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\rglu.h
+	"glinc.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\soundlow.h
+	"fqeffect.h"
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\fqeffect.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\subtitle.h
+	"Color.h"
+	"font.h"
+	"texreg.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\autolod.c
+	"AutoLOD.h"
+	"glinc.h"
+	"LOD.h"
+	"Options.h"
+	"StatScript.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\autolod.h
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\consmgr.c
+	"ConsMgr.h"
+	"CommandLayer.h"
+	"CommandWrap.h"
+	"FEColour.h"
+	"FEFlow.h"
+	"FEReg.h"
+	"font.h"
+	"FontReg.h"
+	"glinc.h"
+	"InfoOverlay.h"
+	"mainrgn.h"
+	"mouse.h"
+	"MultiplayerGame.h"
+	"Options.h"
+	"PiePlate.h"
+	"Ping.h"
+	"Randy.h"
+	"SaveGame.h"
+	"Scroller.h"
+	"Sensors.h"
+	"ShipView.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"StringSupport.h"
+	"TaskBar.h"
+	"Tutor.h"
+	"Tweak.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\fecolour.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\fereg.h
+	"LinkedList.h"
+	"prim2d.h"
+	"Region.h"
+	"texreg.h"
+	"UIControls.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\scroller.h
+	"UIControls.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\shipview.h
+	"FEFlow.h"
+	"Region.h"
+	"ShipDefs.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\taskbar.h
+	"Region.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\damage.c
+	<math.h>
+	<string.h>
+	"glinc.h"
+	"Trails.h"
+	"UnivUpdate.h"
+	"Damage.h"
+	"StatScript.h"
+	"Debug.h"
+	"MEX.h"
+	"Memory.h"
+	"Randy.h"
+	"SinglePlayer.h"
+	"ETG.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\damage.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\mex.h
+	"SpaceObj.h"
+	"Vector.h"
+
+1566423231 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\feflow.c
+	"FEFlow.h"
+	"Debug.h"
+	"FEReg.h"
+	"File.h"
+	"font.h"
+	"FontReg.h"
+	"glinc.h"
+	"Globals.h"
+	"main.h"
+	"mainrgn.h"
+	"Memory.h"
+	"mouse.h"
+	"NIS.h"
+	"prim2d.h"
+	"Scroller.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"StringSupport.h"
+	"Tactics.h"
+	"Tutor.h"
+	"UIControls.h"
+	"utility.h"
+	<windows.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\fereg.c
+	"FEReg.h"
+	<string.h>
+	"Color.h"
+	"Debug.h"
+	"glinc.h"
+	"HorseRace.h"
+	"main.h"
+	"Memory.h"
+	"prim2d.h"
+	"render.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\fontreg.c
+	<string.h>
+	"Debug.h"
+	"Memory.h"
+	"FontReg.h"
+	"StringSupport.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\formation.c
+	"Formation.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"AIShip.h"
+	"AITrack.h"
+	"CommandDefs.h"
+	"CommandLayer.h"
+	"DDDFrigate.h"
+	"Debug.h"
+	"FastMath.h"
+	"Globals.h"
+	"Memory.h"
+	"ProximitySensor.h"
+	"SalCapCorvette.h"
+	"SinglePlayer.h"
+	"StatScript.h"
+	"StringSupport.h"
+	"Tactics.h"
+	"Tweak.h"
+	"Universe.h"
+	"UnivUpdate.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\gamechat.c
+	<stdio.h>
+	<stdlib.h>
+	"Chatting.h"
+	"CommandNetwork.h"
+	"CommandWrap.h"
+	"Debug.h"
+	"FontReg.h"
+	"GameChat.h"
+	"LinkedList.h"
+	"mainrgn.h"
+	"Memory.h"
+	"Region.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"StringSupport.h"
+	"UIControls.h"
+	"Universe.h"
+	"utility.h"
+	<windows.h>
+	<strings.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\gamepick.c
+	"GamePick.h"
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+	"CommandDefs.h"
+	"CommandWrap.h"
+	"Debug.h"
+	"FEColour.h"
+	"File.h"
+	"font.h"
+	"FontReg.h"
+	"Globals.h"
+	"mainrgn.h"
+	"mainswitches.h"
+	"Memory.h"
+	"MultiplayerGame.h"
+	"NetCheck.h"
+	"prim2d.h"
+	"SaveGame.h"
+	"Scroller.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"StringsOnly.h"
+	"Universe.h"
+	"utility.h"
+	<windows.h>
+	<io.h>
+	<dirent.h>
+	<strings.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\gamepick.h
+	"FEFlow.h"
+	"Region.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\globals.c
+	"Globals.h"
+	"mainswitches.h"
+	"Universe.h"
+	"AIPlayer.h"
+	"CommandNetwork.h"
+	"NetCheck.h"
+	"MultiplayerGame.h"
+	"ProfileTimers.h"
+	"mainrgn.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\hash.c
+	"Hash.h"
+	"Debug.h"
+	"Memory.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\hash.h
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\infooverlay.c
+	"InfoOverlay.h"
+	<stdio.h>
+	"FontReg.h"
+	"Globals.h"
+	"Key.h"
+	"Select.h"
+	"StatScript.h"
+	"StringSupport.h"
+	"Task.h"
+	"Tutor.h"
+	"utility.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\kasfunc.c
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"AIFeatures.h"
+	"AIMoves.h"
+	"AIPlayer.h"
+	"AITeam.h"
+	"AITrack.h"
+	"AIVar.h"
+	"Animatic.h"
+	"BTG.h"
+	"Collision.h"
+	"CommandDefs.h"
+	"CommandWrap.h"
+	"ConsMgr.h"
+	"DDDFrigate.h"
+	"Debug.h"
+	"FastMath.h"
+	"font.h"
+	"FormationDefs.h"
+	"HS.h"
+	"KAS.h"
+	"KASFunc.h"
+	"mainrgn.h"
+	"Memory.h"
+	"NIS.h"
+	"Objectives.h"
+	"PiePlate.h"
+	"Ping.h"
+	"prim2d.h"
+	"Randy.h"
+	"render.h"
+	"SalCapCorvette.h"
+	"SaveGame.h"
+	"Select.h"
+	"Sensors.h"
+	"ShipSelect.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"SpeechEvent.h"
+	"StringsOnly.h"
+	"Subtitle.h"
+	"TaskBar.h"
+	"texreg.h"
+	"Timer.h"
+	"TradeMgr.h"
+	"Tutor.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	"utility.h"
+	"Vector.h"
+	<strings.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\btg.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\hs.h
+	"SpaceObj.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\kasfunc.h
+	"AIUtilities.h"
+	"ShipSelect.h"
+	"Volume.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\objectives.h
+	"FEFlow.h"
+	"LinkedList.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\timer.h
+	"Types.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\trademgr.h
+	"FEFlow.h"
+	"Region.h"
+	"SpaceObj.h"
+	"Types.h"
+
+1566423231 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\key.c
+	<stdio.h>
+	<string.h>
+	"Debug.h"
+	"Demo.h"
+	"Task.h"
+	"Key.h"
+	"Options.h"
+	"ConsMgr.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\keybindings.c
+	"KeyBindings.h"
+	"Debug.h"
+	"FEColour.h"
+	"FontReg.h"
+	"Globals.h"
+	"StringsOnly.h"
+	"StringSupport.h"
+	"Types.h"
+	"UIControls.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\keybindings.h
+	"FEFlow.h"
+	"font.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\horserace.c
+	"HorseRace.h"
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"AutoDownloadMap.h"
+	"Chatting.h"
+	"CommandNetwork.h"
+	"Debug.h"
+	"Demo.h"
+	"devstats.h"
+	"ETG.h"
+	"FEFlow.h"
+	"FEReg.h"
+	"File.h"
+	"font.h"
+	"FontReg.h"
+	"glinc.h"
+	"interfce.h"
+	"LinkedList.h"
+	"main.h"
+	"Memory.h"
+	"mouse.h"
+	"MultiplayerGame.h"
+	"NIS.h"
+	"prim2d.h"
+	"Region.h"
+	"render.h"
+	"SinglePlayer.h"
+	"StringSupport.h"
+	"Task.h"
+	"Teams.h"
+	"texreg.h"
+	"TimeoutTimer.h"
+	"Titan.h"
+	"Tweak.h"
+	"UIControls.h"
+	"Universe.h"
+	"utility.h"
+	<direct.h>
+	<io.h>
+	<windows.h>
+	<dirent.h>
+	<unistd.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\devstats.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\thirdparty\jpg\interfce.h
+	"File.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\kas.c
+	"KAS.h"
+	<stdio.h>
+	<string.h>
+	"AIPlayer.h"
+	"AITeam.h"
+	"AIVar.h"
+	"CommandWrap.h"
+	"Debug.h"
+	"File.h"
+	"font.h"
+	"glinc.h"
+	"HS.h"
+	"main.h"
+	"mainrgn.h"
+	"Memory.h"
+	"Objectives.h"
+	"prim3d.h"
+	"render.h"
+	"rglu.h"
+	"SaveGame.h"
+	"Select.h"
+	"SinglePlayer.h"
+	"Timer.h"
+	<strings.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\lagprint.c
+	"LagPrint.h"
+	"CommandNetwork.h"
+	"Debug.h"
+	"FEReg.h"
+	"texreg.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\launchmgr.c
+	<stdio.h>
+	"CommandLayer.h"
+	"CommandWrap.h"
+	"Debug.h"
+	"FEColour.h"
+	"FEFlow.h"
+	"FEReg.h"
+	"font.h"
+	"FontReg.h"
+	"Globals.h"
+	"InfoOverlay.h"
+	"LaunchMgr.h"
+	"LinkedList.h"
+	"mainrgn.h"
+	"Memory.h"
+	"mouse.h"
+	"ObjTypes.h"
+	"Options.h"
+	"PiePlate.h"
+	"prim2d.h"
+	"Randy.h"
+	"render.h"
+	"Scroller.h"
+	"ShipDefs.h"
+	"ShipView.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"SpeechEvent.h"
+	"StringsOnly.h"
+	"Task.h"
+	"TaskBar.h"
+	"texreg.h"
+	"Tutor.h"
+	"UIControls.h"
+	"Universe.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\levelload.c
+	"LevelLoad.h"
+	<ctype.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"AIPlayer.h"
+	"AITeam.h"
+	"Attributes.h"
+	"BTG.h"
+	"CommandLayer.h"
+	"Debug.h"
+	"FastMath.h"
+	"File.h"
+	"Globals.h"
+	"KAS.h"
+	"Light.h"
+	"mainrgn.h"
+	"Memory.h"
+	"MultiplayerGame.h"
+	"Nebulae.h"
+	"Ping.h"
+	"Randy.h"
+	"ResearchAPI.h"
+	"ResearchShip.h"
+	"ScenPick.h"
+	"Sensors.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"SpaceObj.h"
+	"StatScript.h"
+	"Teams.h"
+	"Tweak.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	"Vector.h"
+	<strings.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\light.h
+	"Types.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\scenpick.h
+	"FEFlow.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\hs.c
+	<ctype.h>
+	<math.h>
+	"AIVar.h"
+	"Damage.h"
+	"Debug.h"
+	"FEReg.h"
+	"glinc.h"
+	"Globals.h"
+	"GravWellGenerator.h"
+	"HS.h"
+	"Matrix.h"
+	"Memory.h"
+	"Particle.h"
+	"prim3d.h"
+	"render.h"
+	"SaveGame.h"
+	"SinglePlayer.h"
+	"UnivUpdate.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\particle.h
+	"Color.h"
+	"Mesh.h"
+	"SpaceObj.h"
+	"texreg.h"
+	"Types.h"
+	"Vector.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\light.c
+	"glinc.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<limits.h>
+	"Debug.h"
+	"StatScript.h"
+	"Globals.h"
+	"Vector.h"
+	"Light.h"
+	"File.h"
+	"Memory.h"
+	"MEX.h"
+	"FastMath.h"
+	"Shader.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\shader.h
+	"Color.h"
+	"Matrix.h"
+	"Types.h"
+	"Vector.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\linkedlist.c
+	"LinkedList.h"
+	"Debug.h"
+	"Memory.h"
+	"SpaceObj.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\lod.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+	"StatScript.h"
+	"Memory.h"
+	"SpaceObj.h"
+	"Debug.h"
+	"File.h"
+	"Key.h"
+	"texreg.h"
+	"LOD.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\madlinkin.c
+	"MadLinkIn.h"
+	<stdlib.h>
+	"Debug.h"
+	"MadLinkInDefs.h"
+	"Mothership.h"
+	"Randy.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"SpaceObj.h"
+	"Types.h"
+	"Universe.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\matrix-mult.c
+	<stdio.h>
+	"Types.h"
+	"Matrix.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\memory.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Types.h"
+	"Debug.h"
+	"Key.h"
+	"File.h"
+	"Memory.h"
+	<time.h>
+	"CRC32.h"
+	"Randy.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\meshanim.c
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	<math.h>
+	"Debug.h"
+	"Memory.h"
+	"File.h"
+	"SpaceObj.h"
+	"Vector.h"
+	"Matrix.h"
+	"Universe.h"
+	"NIS.h"
+	"mainrgn.h"
+	"MeshAnim.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\mex.c
+	<string.h>
+	<strings.h>
+	<math.h>
+	"Matrix.h"
+	"Memory.h"
+	"Debug.h"
+	"File.h"
+	"MEX.h"
+	"Color.h"
+	"FastMath.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\multiplayerlangame.c
+	"MultiplayerLANGame.h"
+	<stdio.h>
+	<stdlib.h>
+	"ChannelFSM.h"
+	"Chatting.h"
+	"ColPick.h"
+	"CommandNetwork.h"
+	"Debug.h"
+	"FEFlow.h"
+	"File.h"
+	"FontReg.h"
+	"GameChat.h"
+	"Globals.h"
+	"mainswitches.h"
+	"Memory.h"
+	"mouse.h"
+	"prim2d.h"
+	"Queue.h"
+	"Randy.h"
+	"ScenPick.h"
+	"Scroller.h"
+	"ServerStatus.h"
+	"StatScript.h"
+	"StringSupport.h"
+	"TimeoutTimer.h"
+	"Titan.h"
+	"TitanNet.h"
+	"Tweak.h"
+	"utility.h"
+	<windows.h>
+	<strings.h>
+	<wchar.h>
+
+1566649456 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\knitransform.c
+	<windows.h>
+	<stdlib.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\clouds.c
+	"Clouds.h"
+	"AutoLOD.h"
+	"Clipper.h"
+	"devstats.h"
+	"FastMath.h"
+	"glinc.h"
+	"mainrgn.h"
+	"Memory.h"
+	"Randy.h"
+	"render.h"
+	"Shader.h"
+	"SpaceObj.h"
+	"StatScript.h"
+	"Universe.h"
+	"UnivUpdate.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\clipper.h
+	"Vector.h"
+
+1566429829 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\etg.c
+	"ETG.h"
+	<math.h>
+	<string.h>
+	<stdarg.h>
+	"Battle.h"
+	"BTG.h"
+	"Color.h"
+	"Damage.h"
+	"Debug.h"
+	"Eval.h"
+	"FastMath.h"
+	"File.h"
+	"glinc.h"
+	"HorseRace.h"
+	"mainrgn.h"
+	"Memory.h"
+	"Mesh.h"
+	"MEX.h"
+	"Particle.h"
+	"Randy.h"
+	"render.h"
+	"Select.h"
+	"SoundEvent.h"
+	"StatScript.h"
+	"Task.h"
+	"texreg.h"
+	"Tweak.h"
+	"Types.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	"utility.h"
+	"functions.h"
+	"wrapped_functions.h"
+	"wrapped_unlisted_functions.h"
+	<windows.h>
+	<strings.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\functions.h
+	"wrap_types.h"
+	"wrap.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\wrap_types.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\wrap.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\wrapped_unlisted_functions.h
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\gun.c
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"AIShip.h"
+	"Collision.h"
+	"CommandDefs.h"
+	"Debug.h"
+	"ETG.h"
+	"FastMath.h"
+	"glinc.h"
+	"Globals.h"
+	"Gun.h"
+	"LinkedList.h"
+	"MadLinkIn.h"
+	"MadLinkInDefs.h"
+	"mainrgn.h"
+	"Matrix.h"
+	"Memory.h"
+	"MEX.h"
+	"NIS.h"
+	"Options.h"
+	"Physics.h"
+	"prim3d.h"
+	"Randy.h"
+	"render.h"
+	"Ships.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"Tactics.h"
+	"Tweak.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	"Vector.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\nebulae.c
+	"Nebulae.h"
+	<math.h>
+	<stdio.h>
+	<string.h>
+	"AutoLOD.h"
+	"Debug.h"
+	"FastMath.h"
+	"glinc.h"
+	"Globals.h"
+	"mainrgn.h"
+	"Matrix.h"
+	"Memory.h"
+	"Randy.h"
+	"render.h"
+	"SaveGame.h"
+	"Shader.h"
+	"StatScript.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	<windows.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\netcheck.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"Blobs.h"
+	"CommandWrap.h"
+	"Debug.h"
+	"File.h"
+	"Globals.h"
+	"Memory.h"
+	"NetCheck.h"
+	"Randy.h"
+	"SaveGame.h"
+	"SpaceObj.h"
+	"Stats.h"
+	"StringsOnly.h"
+	"Switches.h"
+	"TitanInterfaceC.h"
+	"TitanNet.h"
+	"Universe.h"
+	"UnivUpdate.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\objectives.c
+	<stdio.h>
+	<string.h>
+	"AIVar.h"
+	"Debug.h"
+	"font.h"
+	"FontReg.h"
+	"KASFunc.h"
+	"mainrgn.h"
+	"Memory.h"
+	"NIS.h"
+	"Objectives.h"
+	"render.h"
+	"SaveGame.h"
+	"Sensors.h"
+	"ShipSelect.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"StringSupport.h"
+	"Subtitle.h"
+	"TaskBar.h"
+	"Universe.h"
+	<strings.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\objtypes.c
+	"ObjTypes.h"
+	<string.h>
+	"ClassDefs.h"
+	"StatScript.h"
+	"StringSupport.h"
+	<strings.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\options.c
+	"Options.h"
+	<math.h>
+	<stdio.h>
+	"AIPlayer.h"
+	"AutoLOD.h"
+	"Battle.h"
+	"Debug.h"
+	"devstats.h"
+	"FEColour.h"
+	"FEFlow.h"
+	"FontReg.h"
+	"glinc.h"
+	"InfoOverlay.h"
+	"Key.h"
+	"KeyBindings.h"
+	"Memory.h"
+	"mouse.h"
+	"MultiplayerGame.h"
+	"rinit.h"
+	"Sensors.h"
+	"Shader.h"
+	"SoundEvent.h"
+	"soundlow.h"
+	"StringsOnly.h"
+	"texreg.h"
+	"UIControls.h"
+	"utility.h"
+	"debugwnd.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\rinit.h
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\debugwnd.h
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\physics.c
+	"Physics.h"
+	<math.h>
+	"Attributes.h"
+	"Battle.h"
+	"Collision.h"
+	"Debug.h"
+	"FastMath.h"
+	"Gun.h"
+	"Matrix.h"
+	"MultiplayerGame.h"
+	"Select.h"
+	"SoundEvent.h"
+	"Tactics.h"
+	"Tweak.h"
+	"Universe.h"
+	"UnivUpdate.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\ping.c
+	"Ping.h"
+	<math.h>
+	<string.h>
+	"Alliance.h"
+	"Battle.h"
+	"Camera.h"
+	"CameraCommand.h"
+	"CommandDefs.h"
+	"Debug.h"
+	"FastMath.h"
+	"Memory.h"
+	"PiePlate.h"
+	"prim2d.h"
+	"ProximitySensor.h"
+	"SaveGame.h"
+	"Select.h"
+	"Sensors.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"StatScript.h"
+	"StringSupport.h"
+	"Tactical.h"
+	"Task.h"
+	"Teams.h"
+	"Tweak.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\tactical.h
+	"ClassDefs.h"
+	"Color.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\btg.c
+	"BTG.h"
+	"Camera.h"
+	"Clipper.h"
+	"Debug.h"
+	"FastMath.h"
+	"File.h"
+	"glinc.h"
+	"main.h"
+	"mainrgn.h"
+	"Memory.h"
+	"render.h"
+	"rglu.h"
+	"texreg.h"
+	"Universe.h"
+	"Vector.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\nis.c
+	"NIS.h"
+	<ctype.h>
+	<float.h>
+	<limits.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	"Attack.h"
+	"BTG.h"
+	"CommandWrap.h"
+	"Debug.h"
+	"Eval.h"
+	"FastMath.h"
+	"FEFlow.h"
+	"File.h"
+	"FontReg.h"
+	"glinc.h"
+	"KAS.h"
+	"Light.h"
+	"mainrgn.h"
+	"Memory.h"
+	"MEX.h"
+	"mouse.h"
+	"Randy.h"
+	"Region.h"
+	"render.h"
+	"Select.h"
+	"ShipDefs.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"StringSupport.h"
+	"Tracking.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	<windows.h>
+	<strings.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\tracking.h
+	"Color.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\pieplate.c
+	<float.h>
+	<math.h>
+	<stdio.h>
+	"Clipper.h"
+	"Color.h"
+	"CommandDefs.h"
+	"FastMath.h"
+	"font.h"
+	"FontReg.h"
+	"glinc.h"
+	"LOD.h"
+	"main.h"
+	"mainrgn.h"
+	"mouse.h"
+	"PiePlate.h"
+	"prim2d.h"
+	"prim3d.h"
+	"ProximitySensor.h"
+	"render.h"
+	"Select.h"
+	"Sensors.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"SpaceObj.h"
+	"Tutor.h"
+	"Tweak.h"
+	"Undo.h"
+	"Universe.h"
+	<windows.h>
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\undo.h
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\matrix.c
+	"Matrix.h"
+	<stdio.h>
+	"Vector.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\plugscreen.c
+	"PlugScreen.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Color.h"
+	"Debug.h"
+	"FEFlow.h"
+	"FontReg.h"
+	"glinc.h"
+	"interfce.h"
+	"Memory.h"
+	"mouse.h"
+	"prim2d.h"
+	"render.h"
+	"SoundEvent.h"
+	"StatScript.h"
+	"StringSupport.h"
+	"Task.h"
+	"utility.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\plugscreen.h
+	"Region.h"
+	"texreg.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\profiletimers.c
+	"ProfileTimers.h"
+	"TimeoutTimer.h"
+	"Color.h"
+	"font.h"
+	<string.h>
+	"Memory.h"
+	"Debug.h"
+	"File.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\randy.c
+	"Randy.h"
+	"Debug.h"
+	"SaveGame.h"
+	"File.h"
+	"Globals.h"
+	"Memory.h"
+	"Universe.h"
+
+1566423231 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\region.c
+	<ctype.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Debug.h"
+	"Demo.h"
+	"main.h"
+	"Memory.h"
+	"mouse.h"
+	"Region.h"
+	"Task.h"
+	"utility.h"
+	<strings.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\rescollect.c
+	"ResCollect.h"
+	<stdlib.h>
+	"AIShip.h"
+	"AITrack.h"
+	"Clouds.h"
+	"Collision.h"
+	"CommandDefs.h"
+	"CommandLayer.h"
+	"Debug.h"
+	"FastMath.h"
+	"Memory.h"
+	"Nebulae.h"
+	"Physics.h"
+	"Randy.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"StatScript.h"
+	"Tutor.h"
+	"Tweak.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	"Vector.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\researchapi.c
+	<stdio.h>
+	"ConsMgr.h"
+	"Debug.h"
+	"FEReg.h"
+	"LinkedList.h"
+	"Memory.h"
+	"MultiplayerGame.h"
+	"ObjTypes.h"
+	"ResearchAPI.h"
+	"ResearchGUI.h"
+	"ShipDefs.h"
+	"SoundEvent.h"
+	"StatScript.h"
+	"StringSupport.h"
+	"TradeMgr.h"
+	"Universe.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\researchgui.h
+	"Region.h"
+	"ResearchAPI.h"
+	"texreg.h"
+	"Types.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\researchgui.c
+	<math.h>
+	<stdio.h>
+	"CommandLayer.h"
+	"CommandNetwork.h"
+	"CommandWrap.h"
+	"FEColour.h"
+	"FEFlow.h"
+	"FEReg.h"
+	"font.h"
+	"FontReg.h"
+	"glinc.h"
+	"Globals.h"
+	"InfoOverlay.h"
+	"main.h"
+	"mainrgn.h"
+	"Memory.h"
+	"mouse.h"
+	"MultiplayerGame.h"
+	"ObjTypes.h"
+	"Options.h"
+	"PiePlate.h"
+	"prim2d.h"
+	"Randy.h"
+	"render.h"
+	"ResearchGUI.h"
+	"Scroller.h"
+	"ShipDefs.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"StringSupport.h"
+	"Task.h"
+	"TaskBar.h"
+	"TradeMgr.h"
+	"Tutor.h"
+	"UIControls.h"
+	"Universe.h"
+	<windows.h>
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\savegame.c
+	"SaveGame.h"
+	<limits.h>
+	<string.h>
+	"AIPlayer.h"
+	"Blobs.h"
+	"BTG.h"
+	"CameraCommand.h"
+	"Clouds.h"
+	"CommandDefs.h"
+	"CommandWrap.h"
+	"ConsMgr.h"
+	"Damage.h"
+	"File.h"
+	"LevelLoad.h"
+	"Light.h"
+	"LinkedList.h"
+	"Memory.h"
+	"MultiplayerGame.h"
+	"Objectives.h"
+	"Ping.h"
+	"Randy.h"
+	"SalCapCorvette.h"
+	"Select.h"
+	"Sensors.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"Star3d.h"
+	"StringSupport.h"
+	"Tactics.h"
+	"Teams.h"
+	"TradeMgr.h"
+	"Tutor.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	"utility.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\scenpick.c
+	<io.h>
+	<sys/stat.h>
+	<dirent.h>
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	<ctype.h>
+	<limits.h>
+	"Debug.h"
+	"File.h"
+	"Memory.h"
+	"utility.h"
+	"font.h"
+	"FontReg.h"
+	"prim2d.h"
+	"mouse.h"
+	"Scroller.h"
+	"ScenPick.h"
+	"texreg.h"
+	"render.h"
+	"BMP.h"
+	"MaxMultiplayer.h"
+	"MultiplayerGame.h"
+	"FEColour.h"
+	"StatScript.h"
+	"Subtitle.h"
+	"StringSupport.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\scroller.c
+	"mouse.h"
+	"Scroller.h"
+
+1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\select.c
+	<windows.h>
+	<stdlib.h>
+	"Vector.h"
+	"FontReg.h"
+	"utility.h"
+	"Debug.h"
+	"Universe.h"
+	"CloakGenerator.h"
+	"GravWellGenerator.h"
+	"UnivUpdate.h"
+	"FastMath.h"
+	"mouse.h"
+	"glinc.h"
+	"main.h"
+	"InfoOverlay.h"
+	"mainrgn.h"
+	"render.h"
+	"Alliance.h"
+	"Sensors.h"
+	"Select.h"
+	"SalCapCorvette.h"
+	"ProximitySensor.h"
+	"StringSupport.h"
+	"Tweak.h"
+	"Tutor.h"
+	"mainrgn.h"
+
+1566423231 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\sensors.c
+	"Sensors.h"
+	<float.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"Alliance.h"
+	"Battle.h"
+	"Blobs.h"
+	"Bounties.h"
+	"BTG.h"
+	"Camera.h"
+	"CameraCommand.h"
+	"CommandDefs.h"
+	"CommandWrap.h"
+	"Debug.h"
+	"devstats.h"
+	"FastMath.h"
+	"font.h"
+	"glinc.h"
+	"GravWellGenerator.h"
+	"InfoOverlay.h"
+	"Light.h"
+	"main.h"
+	"mainrgn.h"
+	"Memory.h"
+	"mouse.h"
+	"MultiplayerGame.h"
+	"NIS.h"
+	"PiePlate.h"
+	"Ping.h"
+	"prim2d.h"
+	"prim3d.h"
+	"Probe.h"
+	"ProximitySensor.h"
+	"Randy.h"
+	"Region.h"
+	"render.h"
+	"rglu.h"
+	"SaveGame.h"
+	"Select.h"
+	"Shader.h"
+	"ShipSelect.h"
+	"SinglePlayer.h"
+	"SoundEvent.h"
+	"SoundEventDefs.h"
+	"StatScript.h"
+	"StringSupport.h"
+	"Subtitle.h"
+	"Tactical.h"
+	"TaskBar.h"
+	"Teams.h"
+	"Transformer.h"
+	"Tutor.h"
+	"Tweak.h"
+	"Universe.h"
+	"UnivUpdate.h"
+	"utility.h"
+	"Vector.h"
+
+1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\transformer.h
+	"Matrix.h"
+	"Mesh.h"
+	"Types.h"
+	"Vector.h"
+
+1566427088 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\clipper.c
+	"Clipper.h"
+	"glinc.h"
+	<GL/gl.h>
+

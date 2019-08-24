@@ -1177,7 +1177,7 @@ void meshFree(meshdata *mesh)
                     {
                         if (((trhandle *)mesh->localMaterial[index].texture)[j] < TR_RegistrySize ) {
 #endif
-                
+
                     trTextureUnregister(((trhandle *)mesh->localMaterial[index].texture)[j]);
 
 #ifdef _X86_64
