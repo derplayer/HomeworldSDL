@@ -73,7 +73,7 @@ void JpegInfo( JPEGDATA *data ) {
 //-----------------------------------------------------------------------------
 // *> Write()
 //
-
+/*
 void JpegWrite( JPEGDATA *data ) {
 
      JSAMPROW row_pointer[1];
@@ -141,11 +141,6 @@ void JpegWrite( JPEGDATA *data ) {
      while (cinfo.next_scanline < cinfo.image_height) {
         row_pointer[0] = &data->ptr[cinfo.next_scanline * row_stride];
         (void) jpeg_write_scanlines(&cinfo, row_pointer, 1);
-        /*
-        if (data->hWnd)
-           SendMessage((HWND)data->hWnd,data->ProgressMsg,
-                              cinfo.next_scanline,cinfo.image_height);
-        */
      }
 
      //-- Finish compression and release memory
@@ -158,7 +153,7 @@ void JpegWrite( JPEGDATA *data ) {
      data->status = 0;
 
 }
-
+*/
 //-----------------------------------------------------------------------------
 // *> Read()
 //

@@ -1598,14 +1598,14 @@ void mrKeyPress(sdword ID)
 // handler code unless we explicitly skip that lookup. Of course having checked for it
 // here we could also put the handler code here too but for consistency that's been left
 // in the switch().
-#ifdef _MACOSX                  
+#ifdef _MACOSX
     if (ID != QKEY)
 #endif
     {
         // Drew's keybinding
         ID = (sdword)kbCheckBindings(ID);
     }
-    
+
     if (ID == CAPSLOCKKEY)
     {
         goto docapslock;        // TO always on
@@ -2117,7 +2117,7 @@ cancelfocus:
                 soundEvent(NULL, UI_Click);
             }
             break;
-			
+
         case MMOUSE_BUTTON:
         case MMOUSE_DOUBLE:
             if (keyIsHit(ALTKEY))
@@ -2127,7 +2127,7 @@ cancelfocus:
                 break;
             }
             // fallthrough to FKEY
-			
+
         case FKEY:
 			if (selSelected.numShips != 0)
             {
@@ -2633,7 +2633,7 @@ docapslock:
                 mrSetTheFormation(ID - F5KEY);
             }
             break;
-
+/* DISABLE SCREENSHOTS ON DREAMCAST
         case SS_SCREENSHOT_KEY:
 #ifdef _MACOSX
         case SS_SCREENSHOT_KEY_2:
@@ -2642,7 +2642,7 @@ docapslock:
             soundEvent(NULL, UI_Click);
             rndTakeScreenshot = TRUE;
             break;
-
+*/
 #if MR_TEST_HPB
         case OKEY:
             if (keyIsHit(CONTROLKEY))
@@ -4016,7 +4016,7 @@ udword mrRegionProcess(regionhandle reg, sdword ID, udword event, udword data)
                                 {                           //band-selecting no ships disabled if tutorial's cancel select disabled
                                     selRectSelect(&(universe.mainCameraCommand.actualcamera),
                                                   &mrSelectionRect);
-                                    if ((selSelected.numShips > 0) && (!playPackets) && (!universePause && opPauseOrders) )  
+                                    if ((selSelected.numShips > 0) && (!playPackets) && (!universePause && opPauseOrders) )
                                     {
                                         if (selShipInSelection(selSelected.ShipPtr, selSelected.numShips, universe.curPlayerPtr->PlayerMothership)
                                             && (universe.curPlayerPtr->PlayerMothership->shiptype == Mothership))
@@ -4049,7 +4049,7 @@ plainOldClickAction:
                         if (ship != NULL)
                         {                                       //if mouse over a ship
 #ifndef _MACOSX_FIX_MISC
-// Mac OS X: the [ALT] + [left mouse button] hack does not work 
+// Mac OS X: the [ALT] + [left mouse button] hack does not work
 // in the tutorial unless we ignore this check
                             if((!(tutorial==TUTORIAL_ONLY)) || tutEnable.bClickSelect)
 #endif

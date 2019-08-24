@@ -5,7 +5,7 @@
 //  Copyright Relic Entertainment, Inc. All rights reserved.
 //  Created 7/15/1998 by khent
 // =============================================================================
-
+/*
 #ifndef ___SCREENSHOT_H
 #define ___SCREENSHOT_H
 
@@ -23,11 +23,11 @@
 
 #ifdef _MACOSX
     // MAC OS X captures high F-keys for system functions like monitor
-    // brightness and Expose etc so we also check for: 
+    // brightness and Expose etc so we also check for:
 
     // F13 on extended keyboards
     #define SS_SCREENSHOT_KEY_2  PRINTKEY
-    
+
     // key next to the 1 on the top numeric keys under esc for laptops
     // which remaps all the function keys to system use
     #define SS_SCREENSHOT_KEY_3  PLUSMINUS
@@ -37,3 +37,4 @@
 void ssTakeScreenshot(void);
 
 #endif
+*/

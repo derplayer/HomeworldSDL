@@ -3920,7 +3920,7 @@ DEFINE_TASK(rndRenderTask)
         {
             rndShamelessPlug();
         }
-
+/*
         //take a screenshot or sequence thereof
         if (keyIsStuck(SS_SCREENSHOT_KEY)
 #ifdef _MACOSX
@@ -3937,7 +3937,8 @@ DEFINE_TASK(rndRenderTask)
             keyClearSticky(SS_SCREENSHOT_KEY_3);
 #endif
         }
-        else if (keyIsStuck(PAUSEKEY))
+        */
+        if (keyIsStuck(PAUSEKEY))
         {
             keyClearSticky(PAUSEKEY);
         }

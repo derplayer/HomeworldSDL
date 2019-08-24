@@ -5,7 +5,7 @@
 //  Copyright Relic Entertainment, Inc. All rights reserved.
 //  Created 7/15/1998 by khent
 // =============================================================================
-
+/*
 #include "screenshot.h"
 
 #ifdef _WIN32
@@ -135,7 +135,7 @@ static void _ssSaveScreenshot(ubyte* buf)
 void ssTakeScreenshot(void)
 {
     return;
-/*
+
     ubyte* screenshot_buffer =
 #ifdef _WIN32
         (void *)VirtualAlloc(NULL, 3 * MAIN_WindowWidth * MAIN_WindowHeight,  // 3 = RGB
@@ -163,5 +163,6 @@ void ssTakeScreenshot(void)
 #endif
 
     }
-*/
+
 }
+*/

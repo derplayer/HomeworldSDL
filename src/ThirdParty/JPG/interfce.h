@@ -19,7 +19,7 @@ typedef struct _jpegdata {
    unsigned char *ptr;
    int    width;
    int    height;
-   FILE  *output_file;
+   //FILE  *output_file;
    filehandle  input_file;
    int    aritcoding;
    int    CCIR601sampling;
@@ -31,7 +31,7 @@ typedef struct _jpegdata {
    int    components;
 } JPEGDATA;
 
-void JpegWrite( JPEGDATA *data );
+//void JpegWrite( JPEGDATA *data );
 void JpegInfo(  JPEGDATA *data );
 void JpegRead(  JPEGDATA *data );
 
