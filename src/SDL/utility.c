@@ -101,6 +101,7 @@
 #include "Undo.h"
 #include "Universe.h"
 #include "UnivUpdate.h"
+#include <malloc.h>
 
 #ifdef _WIN32_FIX_ME
  #pragma warning( 4 : 4142 )     //turn off "benign redefinition of type" warning
@@ -3480,7 +3481,7 @@ void *utyGrowthHeapAlloc(sdword size)
     return((void *)VirtualAlloc(NULL, size, MEM_COMMIT, PAGE_READWRITE));
 #else
     //return mmap(0, size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
-    return NULL; //TODO: FIX
+    return calloc(size, sizeof(sdword));
 #endif
 }
 
@@ -3501,9 +3502,10 @@ void utyGrowthHeapFree(void *heap)
 	//not sure if this is an equivalent statement, but it fixes a crash on exit
 	free(heap);
 #else
-    int result;
-    result = munmap(heap, 0);
-    dbgAssertOrIgnore(result != -1);
+    //int result;
+    //result = munmap(heap, 0);
+    //dbgAssertOrIgnore(result != -1);
+    free(heap);
 #endif
 }
 
@@ -3808,7 +3810,8 @@ char* utyGameSystemsPreInit(void)
 #else
     //utyMemoryHeap = mmap(0, MemoryHeapSize + sizeof(memcookie) * 4,
     //    PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
-    utyMemoryHeap = NULL;
+    //utyMemoryHeap = NULL;
+    utyMemoryHeap = calloc(MemoryHeapSize + sizeof(memcookie) * 4, sizeof(sdword));
 #endif
 
     if (utyMemoryHeap == NULL)

@@ -3,6 +3,8 @@
 
 /* Entirely ripped from the Wine project (thanks!) */
 
+#if 0
+
 #define DO_FPU(x,y) __asm__ __volatile__( x " %0;fwait" : "=m" (y) : )
 #define POP_FPU(x) DO_FPU("fstpl",x)
 
@@ -134,4 +136,5 @@ void WINAPI _chkstk( CONTEXT86 *context )
 {
     context->Esp -= context->Eax;
 }
+#endif
 #endif

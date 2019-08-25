@@ -1789,7 +1789,8 @@
 
 1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\devstats.h
 
-1566689803 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\thirdparty\jpg\interfce.h
+1566690242 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\thirdparty\jpg\interfce.h
+	"File.h"
 
 1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\kas.c
 	"KAS.h"
@@ -1996,7 +1997,7 @@
 	"Types.h"
 	"Universe.h"
 
-1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\matrix-mult.c
+1566740594 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\matrix-mult.c
 	<stdio.h>
 	"Types.h"
 	"Matrix.h"
@@ -3985,7 +3986,7 @@
 	"fqcodec.h"
 	"fquant.h"
 
-1566423231 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\mainrgn.c
+1566690305 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\mainrgn.c
 	"mainrgn.h"
 	<float.h>
 	<math.h>
@@ -4056,7 +4057,7 @@
 	"utility.h"
 	<windows.h>
 
-1566423087 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\screenshot.h
+1566690158 j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\screenshot.h
 	"Key.h"
 	"Types.h"
 
@@ -4270,10 +4271,8 @@
 	"SDL/SDL_thread.h"
 	"SDL_net.h"
 
-1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\titaninterfacec.c
+1566740063 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\titaninterfacec.c
 	"TitanInterfaceC.h"
-	"NetworkInterface.h"
-	"Debug.h"
 
 1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\ships\cloakgenerator.c
 	"CloakGenerator.h"
@@ -4590,7 +4589,7 @@
 	"render.h"
 	<windows.h>
 
-1566683539 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\screenshot.c
+1566690151 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\screenshot.c
 	"screenshot.h"
 	<windows.h>
 	"Debug.h"
@@ -4599,7 +4598,7 @@
 	"main.h"
 	<unistd.h>
 
-1566681297 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\render.c
+1566690349 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\render.c
 	"render.h"
 	<float.h>
 	<math.h>
@@ -4906,7 +4905,7 @@
 	<console.h>
 	"cderror.h"
 
-1566684862 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\thirdparty\jpg\interfce.c
+1566738968 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\thirdparty\jpg\interfce.c
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
@@ -4928,7 +4927,7 @@
 	"BitIO.h"
 	"LZSS.h"
 
-1566689314 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\utility.c
+1566740255 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\utility.c
 	"utility.h"
 	<ctype.h>
 	<limits.h>
@@ -5022,6 +5021,7 @@
 	"Undo.h"
 	"Universe.h"
 	"UnivUpdate.h"
+	<malloc.h>
 	"main.h"
 	<windows.h>
 	<winreg.h>

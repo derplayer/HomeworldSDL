@@ -32,7 +32,7 @@
     Return      :
     Warning     : result cannot be the same matrix as first or second.
 ----------------------------------------------------------------------------*/
-void matMultiplyMatByMat(matrix *result,matrix *first,matrix *second)
+void matMultiplyMatByMat1(matrix *result,matrix *first,matrix *second)
 {
 #if defined (_MSC_VER)
     static real32* c;

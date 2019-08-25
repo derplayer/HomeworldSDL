@@ -13,7 +13,6 @@
 				<Option type="5" />
 				<Option compiler="dc-gcc" />
 				<Compiler>
-					<Add option="-Wall" />
 					<Add option="-g -Wa,-g -Wl,-g" />
 					<Add option="-DDEBUG" />
 					<Add option="-DHW_GAME_HOMEWORLD" />
@@ -31,11 +30,16 @@
 					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/Titan" />
 				</Compiler>
 				<Linker>
-					<Add option="obj\Debug\romdisk.o" />
+					<Add library="C:/DreamSDK/msys/1.0/opt/toolchains/dc/kos-ports/GLdc/libGLdc.a" />
 					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/" />
 					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Ships" />
 					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/SDL" />
 					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Game" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/CRC" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/JPG" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/LZSS" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/Titan" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -46,24 +50,39 @@
 				<Option compiler="dc-gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add option="-Wall" />
 					<Add option="-DRELEASE" />
 					<Add option="-DHW_GAME_HOMEWORLD" />
 					<Add option="-DHW_BUILD_FOR_DISTRIBUTION" />
 					<Add option="-D__DISABLE_SSE__" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Ships" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/SDL" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Game" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/CRC" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/JPG" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/LZSS" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/Titan" />
 				</Compiler>
 				<Linker>
 					<Add option="obj\Release\romdisk.o" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Ships" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/SDL" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Game" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/CRC" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/JPG" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/LZSS" />
+					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/Titan" />
 				</Linker>
 			</Target>
 			<Environment>
 				<Variable name="DREAMSDK_MKRDOBJ" value="C:\DreamSDK\msys\1.0\opt\dreamsdk\ide\mkrdobj.cmd" />
 			</Environment>
 		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-		</Compiler>
 		<Linker>
+			<Add option="obj\Debug\romdisk.o" />
 			<Add library="GL" />
 			<Add library="SDL" />
 			<Add library="parallax" />
@@ -822,9 +841,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="SDL/TitanInterfaceC.h" />
-		<Unit filename="SDL/TitanInterfaceC.stub.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="SDL/TitanPacketMsg.cpp" />
 		<Unit filename="SDL/TitanPacketMsg.h" />
 		<Unit filename="SDL/avi.c">
@@ -920,9 +936,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="SDL/utility.h" />
-		<Unit filename="SDL/win32glue.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="Ships/AdvanceSupportFrigate.c">
 			<Option compilerVar="CC" />
 		</Unit>

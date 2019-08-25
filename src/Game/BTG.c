@@ -114,8 +114,8 @@ typedef struct tagTGAFileHeader
 // code
 // -----
 
-#define fsin(A) (real32)sin((real64)(A))
-#define fcos(A) (real32)cos((real64)(A))
+#define fsinRelic(A) (real32)sin((real64)(A))
+#define fcosRelic(A) (real32)cos((real64)(A))
 
 /*-----------------------------------------------------------------------------
     Name        : btgStartup
@@ -561,9 +561,9 @@ void btgLoad(char* filename)
 #endif
 
 
-// Hard coding sizeof values. 
+// Hard coding sizeof values.
 // This is because they may change later on in the world but static in the file.
-// This allows us to align variables. It replaces 
+// This allows us to align variables. It replaces
 //  memcpy(btgHead, btgData, headSize);
 
     memset(btgHead,0,sizeof(*btgHead));
@@ -630,7 +630,7 @@ void btgLoad(char* filename)
 
     memcpy( (ubyte*)btgHead+offsetof(btgHeader,renderMode    ), btgDataOffset, 4 );
     btgDataOffset += 4;
-        
+
 //    memcpy(btgHead, btgData, headSize);  //See above.
 
 #if FIX_ENDIAN
@@ -705,13 +705,13 @@ void btgLoad(char* filename)
         for( i=0; i<btgHead->numVerts; i++ )
         {
             btgVerts[i].flags = FIX_ENDIAN_INT_32( btgVerts[i].flags );
-            
+
             swap  = ( Uint64 *)&btgVerts[i].x;
             *swap = SDL_SwapLE64( *swap );
-            
+
             swap  = ( Uint64 *)&btgVerts[i].y;
             *swap = SDL_SwapLE64( *swap );
-            
+
             btgVerts[i].red        = FIX_ENDIAN_INT_32( btgVerts[i].red );
             btgVerts[i].green      = FIX_ENDIAN_INT_32( btgVerts[i].green );
             btgVerts[i].blue       = FIX_ENDIAN_INT_32( btgVerts[i].blue );
@@ -860,7 +860,7 @@ void btgLoad(char* filename)
             instarp += 4;
 
 	}
-		
+
 #if FIX_ENDIAN
 		for( i=0; i<btgHead->numPolys; i++ )
 		{
