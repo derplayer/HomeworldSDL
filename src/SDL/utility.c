@@ -3794,8 +3794,12 @@ char* utyGameSystemsPreInit(void)
 		newSize = (sdword)((real32)phys_pages * (real32)page_size
             * MEM_HeapDefaultScalar);
 #else
+        //long phys_pages = sysconf(_SC_PHYS_PAGES);
+        //long page_size = sysconf(_SC_PAGE_SIZE);
+
         long phys_pages = sysconf(_SC_PHYS_PAGES);
-        long page_size = sysconf (_SC_PAGE_SIZE);
+        long page_size = sysconf(_SC_PAGE_SIZE);
+        malloc_getpagesize;
         newSize = (sdword)((real32)phys_pages * (real32)page_size
             * MEM_HeapDefaultScalar);
 #endif
@@ -4322,7 +4326,8 @@ char* utyGameSystemsPreShutdown(void)
         bool result = VirtualFree(utyMemoryHeap, 0, MEM_RELEASE);
         dbgAssertOrIgnore(result);
 #else
-        dbgAssertAlwaysDo(munmap(utyMemoryHeap, 0) != -1);
+        //dbgAssertAlwaysDo(munmap(utyMemoryHeap, 0) != -1);
+        free(utyMemoryHeap);
 #endif
         utyClear(SSA_MemoryHeap);
     }
@@ -4676,9 +4681,10 @@ char *utyGameSystemsShutdown(void)
 		//not sure if this is an equivalent statement, but it fixes a crash on exit
 		free(utyMemoryHeap);
 #else
-        int result;
-        result = munmap(utyMemoryHeap, 0);
-        dbgAssertOrIgnore(result != -1);
+        //int result;
+        //result = munmap(utyMemoryHeap, 0);
+        //dbgAssertOrIgnore(result != -1);
+        free(utyMemoryHeap);
 #endif
         utyClear(SSA_MemoryHeap);
     }

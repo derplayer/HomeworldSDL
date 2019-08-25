@@ -3946,7 +3946,7 @@ DEFINE_TASK(rndRenderTask)
         if (rndTakeScreenshot)
         {
             rndTakeScreenshot = FALSE;
-            ssTakeScreenshot();
+            //ssTakeScreenshot();
         }
 
         if (rndFillCounter)

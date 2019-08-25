@@ -132,7 +132,7 @@ scriptEntry NebulaeTweaks[] =
     makeEntry(NEB_VEL_BASE, scriptSetReal32CB),
     makeEntry(NEB_TENDRIL_RADIUS_BASE, scriptSetReal32CB),
     makeEntry(NEB_TENDRIL_RADIUS_RANGE, scriptSetReal32CB),
-    
+
     END_SCRIPT_ENTRY
 };
 
@@ -182,12 +182,12 @@ real32 _fabs(real32 n)
     return (n < 0.0f) ? -n : n;
 }
 
-static real32 fsin(real32 a)
+static real32 fsinRelic(real32 a)
 {
     return (real32)sin((double)a);
 }
 
-static real32 fcos(real32 a)
+static real32 fcosRelic(real32 a)
 {
     return (real32)cos((double)a);
 }

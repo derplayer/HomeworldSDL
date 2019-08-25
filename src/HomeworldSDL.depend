@@ -1939,7 +1939,7 @@
 	"Types.h"
 	"Vector.h"
 
-1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\light.c
+1566741001 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\light.c
 	"glinc.h"
 	<stdlib.h>
 	<stdio.h>
@@ -2185,7 +2185,7 @@
 	"UnivUpdate.h"
 	"Vector.h"
 
-1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\nebulae.c
+1566740950 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\nebulae.c
 	"Nebulae.h"
 	<math.h>
 	<stdio.h>
@@ -2346,7 +2346,7 @@
 	"Color.h"
 	"Types.h"
 
-1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\btg.c
+1566740671 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\btg.c
 	"BTG.h"
 	"Camera.h"
 	"Clipper.h"
@@ -3523,7 +3523,7 @@
 	"font.h"
 	"Key.h"
 
-1566423087 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\trademgr.c
+1566740945 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\game\trademgr.c
 	<math.h>
 	<stdio.h>
 	"CameraCommand.h"
@@ -4927,7 +4927,7 @@
 	"BitIO.h"
 	"LZSS.h"
 
-1566740255 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\utility.c
+1566742105 source:j:\development\dreamcast\vm\homeworld_dc\homeworldsdl\src\sdl\utility.c
 	"utility.h"
 	<ctype.h>
 	<limits.h>

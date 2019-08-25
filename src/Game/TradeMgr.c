@@ -1345,8 +1345,8 @@ void wkTradeControl(void);
 void wkTradeFocusedShip(void);
 void wkTradeUpdate(void);
 
-extern real32 fcos(real32 r);
-extern real32 fsin(real32 r);
+extern real32 fcosRelic(real32 r);
+extern real32 fsinRelic(real32 r);
 
 void mrTradeStuffTest(sdword *a, sdword *b)
 {

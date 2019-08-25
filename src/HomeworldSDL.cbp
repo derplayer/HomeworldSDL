@@ -30,6 +30,8 @@
 					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/ThirdParty/Titan" />
 				</Compiler>
 				<Linker>
+					<Add library="C:/DreamSDK/msys/1.0/opt/toolchains/dc/kos-ports/lib/libjpeg.a" />
+					<Add library="C:/DreamSDK/msys/1.0/opt/toolchains/dc/kos-ports/lib/libSDL.a" />
 					<Add library="C:/DreamSDK/msys/1.0/opt/toolchains/dc/kos-ports/GLdc/libGLdc.a" />
 					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/" />
 					<Add directory="J:/Development/Dreamcast/VM/Homeworld_DC/HomeworldSDL/src/Ships" />

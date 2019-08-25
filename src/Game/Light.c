@@ -49,7 +49,7 @@ struct
 lightNameToInfoTable[] =
 {
     { "default", &lightDefaultLight   },
-    
+
     { "player0", &lightPlayerLight[0] },
     { "player1", &lightPlayerLight[1] },
     { "player2", &lightPlayerLight[2] },
@@ -58,7 +58,7 @@ lightNameToInfoTable[] =
     { "player5", &lightPlayerLight[5] },
     { "player6", &lightPlayerLight[6] },
     { "player7", &lightPlayerLight[7] },
-    
+
     { NULL,      NULL                 }
 };
 
@@ -77,7 +77,7 @@ static scriptEntry lightScriptTable[] =
     { "diffuse",   lightPropertiesRead, &lightDefaultLight.diffuse  },
     { "specular",  lightPropertiesRead, &lightDefaultLight.specular },
     { "position",  lightPositionRead,   NULL                        },
-    
+
     { NULL,        NULL,                NULL                        }
 };
 
@@ -245,12 +245,12 @@ void lightPlayerColorLightSet(sdword playerIndex)
 }
 #endif
 
-real32 fcos(real32 r)
+real32 fcosRelic(real32 r)
 {
     return (real32)cos((real64)r);
 }
 
-real32 fsin(real32 r)
+real32 fsinRelic(real32 r)
 {
     return (real32)sin((real64)r);
 }
